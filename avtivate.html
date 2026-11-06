@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Activate TeachAtlas Pro</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f4f7fb;
+      color: #243447;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background: #1463b8;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    header h1 { margin: 0; }
+    main {
+      background: white;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 35px;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px #00000012;
+    }
+    h2 { color: #1256a1; }
+    button {
+      background: #1463b8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 14px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    button:hover:not(:disabled) {
+      background: #104f94;
+    }
+    #status {
+      margin-top: 20px;
+      white-space: pre-wrap;
+    }
+    #result {
+      display: none;
+      background: #eef5ff;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    #token {
+      display: block;
+      padding: 12px;
+      background: white;
+      overflow-wrap: anywhere;
+      font-family: monospace;
+      margin: 12px 0;
+      user-select: all;
+    }
+    a { color: #1256a1; }
+    footer {
+      text-align: center;
+      margin: 30px 20px;
+      font-size: 14px;
+      color: #637083;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>TeachAtlas</h1>
+  <p>Turn what you do into a guide anyone can follow.</p>
+</header>
+
+<main>
+  <h2>Activate TeachAtlas Pro</h2>
+
+  <p>
+    Thank you for subscribing to TeachAtlas Pro.
+    Complete your activation below to obtain your
+    subscription license.
+  </p>
+
+  <p>
+    Your purchase will be verified securely through
+    Stripe before a license is issued.
+  </p>
+
+  <button id="activateBtn" type="button">
+    Activate TeachAtlas Pro
+  </button>
+
+  <p id="status" role="status" aria-live="polite"></p>
+
+  <section id="result">
+    <h3>Your activation code</h3>
+    <p>
+      Copy this code and keep it somewhere safe.
+      You will use it to activate the TeachAtlas extension.
+    </p>
+    <code id="token"></code>
+    <button id="copyBtn" type="button">
+      Copy activation code
+    </button>
+    <p>
+      <strong>Important:</strong> Treat this code like
+      a password. Do not share it with anyone.
+    </p>
+  </section>
+
+  <p>
+    Need help?
+    <a href="mailto:bkq421@gmail.com">
+      Contact TeachAtlas Support
+    </a>
+  </p>
+
+  <p>
+    <a href="./index.html">
+      Privacy Policy and Terms of Service
+    </a>
+  </p>
+</main>
+
+<footer>
+  &copy; 2026 TeachAtlas
+</footer>
+
+<script>
+  const API =
+    "https://teachatlas-license-api.chx91.workers.dev";
+
+  const params = new URLSearchParams(location.search);
+  const sessionId = params.get("session_id");
+
+  // Remove the session ID from the visible URL.
+  history.replaceState(null, "", location.pathname);
+
+  const activateBtn =
+    document.getElementById("activateBtn");
+
+  const copyBtn =
+    document.getElementById("copyBtn");
+
+  const statusEl =
+    document.getElementById("status");
+
+  const result =
+    document.getElementById("result");
+
+  const tokenEl =
+    document.getElementById("token");
+
+  let activationCode = "";
+
+  if (!sessionId || !/^cs_live_[A-Za-z0-9_]+$/.test(sessionId)) {
+    activateBtn.disabled = true;
+    statusEl.textContent =
+      "No valid live checkout session was found. " +
+      "Please return using the link provided after payment.";
+  }
+
+  activateBtn.addEventListener("click", async () => {
+    if (!sessionId) return;
+
+    activateBtn.disabled = true;
+    statusEl.textContent =
+      "Verifying your subscription...";
+    result.style.display = "none";
+
+    try {
+      const response = await fetch(API + "/activate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          session_id: sessionId
+        }),
+        cache: "no-store"
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.activation_token) {
+        throw new Error(
+          data.error || "Activation could not be completed."
+        );
+      }
+
+      activationCode = data.activation_token;
+      tokenEl.textContent = activationCode;
+      result.style.display = "block";
+
+      statusEl.textContent =
+        "Your TeachAtlas Pro license is ready.";
+
+    } catch (error) {
+      statusEl.textContent =
+        "Activation was unsuccessful. " +
+        "Please contact support if the problem continues.";
+
+      activateBtn.disabled = false;
+    }
+  });
+
+  copyBtn.addEventListener("click", async () => {
+    if (!activationCode) return;
+
+    try {
+      await navigator.clipboard.writeText(activationCode);
+      copyBtn.textContent = "Copied!";
+    } catch {
+      statusEl.textContent =
+        "Copy was unavailable. Select the code above " +
+        "and copy it manually.";
+    }
+  });
+</script>
+
+</body>
+</html>
