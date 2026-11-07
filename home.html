@@ -998,43 +998,124 @@
     </section>
 
     <!-- Pricing -->
-    <section id="pricing" class="section">
-      <div class="container">
+   
+<!-- Pricing -->
+<section id="pricing" class="section">
+  <div class="container">
 
-        <div class="section-heading">
-          <span class="eyebrow">Simple Pricing</span>
-          <h2>One plan. One straightforward price.</h2>
-          <p>
-            A single subscription for the TeachAtlas Pro
-            features you need to create illustrated guides.
-          </p>
+    <div class="section-heading">
+      <span class="eyebrow">Simple Pricing</span>
+      <h2>Start free. Upgrade when you're ready.</h2>
+      <p>
+        One powerful guide maker. Two simple ways to use it.
+        No credit card required to get started.
+      </p>
+    </div>
+
+    <div style="
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+      gap: 24px;
+      max-width: 940px;
+      margin: 0 auto;
+      align-items: stretch;
+    ">
+
+      <!-- Free plan -->
+      <div class="pricing-card" style="
+        width: 100%;
+        max-width: none;
+        border: 1px solid #DDE5EE;
+        box-shadow: 0 8px 22px rgba(18,39,71,.05);
+      ">
+
+        <div class="pricing-top">
+          <h3>TeachAtlas Free</h3>
+          <span class="pro-label" style="
+            background: #EDF4FF;
+            color: #1559B7;
+          ">FREE</span>
         </div>
 
-        <div class="pricing-card">
+        <div class="price">
+          $0 <small>/ forever</small>
+        </div>
 
-          <div class="pricing-top">
-            <h3>TeachAtlas Pro</h3>
-            <span class="pro-label">PRO</span>
-          </div>
+        <p class="pricing-description">
+          Create your first guides without a subscription
+          or credit card.
+        </p>
 
-          <div class="price">
-            $9 <small>USD / month</small>
-          </div>
+        <ul class="benefits">
+          <li>Record supported browser actions</li>
+          <li>Create and save up to 3 guides</li>
+          <li>Edit step-by-step instructions</li>
+          <li>Export guides as TXT files</li>
+          <li>Delete guides to make room for new ones</li>
+          <li>No activation code required</li>
+        </ul>
 
-          <p class="pricing-description">
-            Full access to TeachAtlas Pro while your
-            subscription remains eligible.
-          </p>
+        <a class="button button-outline"
+           style="width: 100%;"
+           href="https://chromewebstore.google.com/detail/hfdninhgfekgelaihhnpicfgckiepjgm">
+          Get TeachAtlas Free
+        </a>
 
-          <ul class="benefits">
-            <li>Browser action recording</li>
-            <li>Optional illustrated screenshots</li>
-            <li>Editable step-by-step guides</li>
-            <li>HTML, Word, PDF, and text exports</li>
-            <li>Locally saved guide library</li>
-            <li>Guide backup and restoration</li>
-            <li>Subscription activation and support</li>
-          </ul>
+        <p class="pricing-note">
+          Free features require TeachAtlas version 2.1
+          or later.
+        </p>
+
+      </div>
+
+      <!-- Pro plan -->
+      <div class="pricing-card" style="
+        width: 100%;
+        max-width: none;
+      ">
+
+        <div class="pricing-top">
+          <h3>TeachAtlas Pro</h3>
+          <span class="pro-label">PRO</span>
+        </div>
+
+        <div class="price">
+          $9 <small>USD / month</small>
+        </div>
+
+        <p class="pricing-description">
+          Everything in Free, plus advanced features
+          for creating professional guides.
+        </p>
+
+        <ul class="benefits">
+          <li>Everything in TeachAtlas Free</li>
+          <li>Unlimited guides, subject to browser storage</li>
+          <li>Optional screenshots and click indicators</li>
+          <li>HTML, Word, PDF, and TXT exports</li>
+          <li>Guide backup and restoration</li>
+          <li>Manual guide creation</li>
+          <li>Subscription activation and support</li>
+        </ul>
+
+        <a class="button button-primary"
+           style="width: 100%;"
+           href="https://buy.stripe.com/aFa9AV1mReOg6xP44S2wU00">
+          Get TeachAtlas Pro — $9/month
+        </a>
+
+        <p class="pricing-note">
+          Monthly subscription through Stripe.
+          Applicable taxes may be added.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
           
          
