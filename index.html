@@ -1,388 +1,175 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>TeachAtlas | Privacy Policy and Terms</title>
+  <meta name="description" content="TeachAtlas privacy policy, terms of use, subscriptions, cancellations, refunds, and support.">
+  <title>TeachAtlas | Privacy, Terms & Billing</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      max-width: 850px;
-      margin: 0 auto;
-      padding: 30px 20px;
-      color: #243447;
-      background: #ffffff;
-    }
-    header {
-      background: #1463b8;
-      color: white;
-      padding: 30px;
-      border-radius: 12px;
-    }
-    header h1 { margin: 0; }
-    header p { margin-bottom: 0; }
-    nav { margin: 25px 0; }
-    nav a {
-      display: inline-block;
-      margin: 5px 15px 5px 0;
-      color: #0759ac;
-      font-weight: bold;
-    }
-    h2 {
-      color: #1256a1;
-      border-bottom: 2px solid #e6edf5;
-      padding-bottom: 8px;
-      margin-top: 45px;
-    }
-    h3 { color: #284c75; }
-    a { color: #0759ac; }
-    section { padding-bottom: 20px; }
-    footer {
-      margin-top: 35px;
-      border-top: 1px solid #ddd;
-      padding-top: 20px;
-      font-size: 14px;
-      color: #526174;
-    }
+    :root { color-scheme: light; --blue:#125bb0; --navy:#122c52; --muted:#4d6177; --line:#d9e3ed; --bg:#f5f8fc; --white:#fff; --yellow:#ffd94c; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:1.25rem; }
+    body { margin:0; font:16px/1.7 system-ui,-apple-system,"Segoe UI",Arial,sans-serif; color:#1b2c40; background:var(--bg); }
+    a { color:#064c96; text-underline-offset:3px; }
+    a:focus-visible { outline:3px solid #e3a600; outline-offset:3px; }
+    .wrap { width:min(100% - 36px,960px); margin-inline:auto; }
+    .hero { background:linear-gradient(120deg,#104a90 0%,#176cc5 100%); color:white; padding:42px 0 36px; border-bottom:5px solid var(--yellow); }
+    .hero h1 { margin:0; letter-spacing:-.02em; font-size:clamp(2rem,4vw,3rem); line-height:1.15; }
+    .hero p { margin:12px 0 0; max-width:670px; color:#f2f7ff; }
+    nav { padding:18px 0; display:flex; gap:10px; flex-wrap:wrap; }
+    nav a { background:white; border:1px solid var(--line); border-radius:20px; color:#124f96; padding:6px 14px; font-size:.92rem; text-decoration:none; font-weight:650; }
+    main { padding-bottom:36px; }
+    .intro { margin:8px 0 24px; color:var(--muted); }
+    .section { background:white; border:1px solid var(--line); border-radius:14px; padding:clamp(20px,4vw,34px); margin:22px 0; box-shadow:0 3px 16px #173d6810; }
+    h2 { margin:0 0 18px; font-size:1.65rem; line-height:1.25; color:var(--navy); }
+    h3 { font-size:1.08rem; color:#174978; margin:28px 0 7px; }
+    h3:first-of-type { margin-top:14px; }
+    p { margin:8px 0 14px; }
+    ul { padding-left:1.35rem; }
+    li { margin:6px 0; }
+    .summary { padding:17px 19px; border-left:4px solid var(--blue); background:#f3f7fd; border-radius:0 8px 8px 0; }
+    .small { font-size:.92rem; color:var(--muted); }
+    .data-table { width:100%; border-collapse:collapse; margin:14px 0 22px; }
+    .data-table th,.data-table td { padding:12px; border:1px solid var(--line); text-align:left; vertical-align:top; }
+    .data-table th { background:#f2f6fb; color:var(--navy); }
+    footer { border-top:1px solid var(--line); color:var(--muted); padding:24px 0 40px; font-size:.91rem; }
+    @media (max-width:650px) { .data-table, .data-table tbody, .data-table tr, .data-table th, .data-table td { display:block; } .data-table thead { display:none; } .data-table tr { margin:12px 0; border:1px solid var(--line); border-radius:8px; overflow:hidden; } .data-table th,.data-table td { border:0; } .data-table td:before { content:attr(data-label); display:block; font-weight:700; color:var(--navy); } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>TeachAtlas</h1>
-  <p>Legal Information, Privacy & Customer Support</p>
+<header class="hero">
+  <div class="wrap">
+    <h1>TeachAtlas</h1>
+    <p>Privacy, Terms of Use &amp; Subscription Information</p>
+  </div>
 </header>
+<div class="wrap">
+  <nav aria-label="Legal information navigation">
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#terms">Terms of Use</a>
+    <a href="#billing">Subscriptions &amp; Refunds</a>
+    <a href="#contact">Contact &amp; Privacy Requests</a>
+    <a href="support.html">Support Center</a>
+    <a href="home.html">Homepage</a>
+  </nav>
+  <main>
+    <p class="intro"><strong>Last updated:</strong> November 9, 2026. TeachAtlas is a browser extension for recording supported browser actions and converting them into editable, shareable instructions. These policies cover the extension, its licensing and activation services, and related TeachAtlas web pages.</p>
+    <section id="privacy" class="section" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Privacy Policy</h2>
+      <p class="summary"><strong>In short:</strong> Your guides and screenshots are normally stored in your browser, not in a TeachAtlas cloud guide library. Paid subscriptions use Stripe for billing and a Cloudflare-hosted service to activate and verify Pro access. The licensing service does not need your guide content or screenshots to verify your subscription.</p>
 
-<p><strong>Last updated:</strong> November 5, 2026</p>
+      <h3>1. What TeachAtlas processes</h3>
+      <table class="data-table">
+        <thead><tr><th scope="col">Category</th><th scope="col">Information and purpose</th><th scope="col">Where it is handled</th></tr></thead>
+        <tbody>
+          <tr><td data-label="Category">Guide and recording data</td><td data-label="Information and purpose">Supported clicks, control labels, action descriptions, click positions, page addresses/navigation, guide titles, edited steps, and optional screenshots. Used to create, display, edit, save, and export guides.</td><td data-label="Where it is handled">In your browser profile and any files you choose to export or back up.</td></tr>
+          <tr><td data-label="Category">Subscription and payment data</td><td data-label="Information and purpose">Information provided at Stripe checkout and associated customer, checkout, subscription, payment-status, and billing records. Used to process payments, send receipts, administer subscriptions, and resolve billing issues.</td><td data-label="Where it is handled">Stripe processes checkout and payment information. TeachAtlas may access information needed to operate and support subscriptions.</td></tr>
+          <tr><td data-label="Category">License and activation data</td><td data-label="Information and purpose">Checkout and subscription references, activation credential or its cryptographic hash, subscription eligibility/status, and relevant license events. Used to issue, validate, recover, revoke, and protect Pro access.</td><td data-label="Where it is handled">A TeachAtlas licensing service hosted using Cloudflare Workers and a Cloudflare database; the extension also stores license-related information locally.</td></tr>
+          <tr><td data-label="Category">Support and technical data</td><td data-label="Information and purpose">Information you send in support emails, together with technical data ordinarily processed by website and infrastructure providers (which may include IP address, request metadata, and timestamps). Used to respond to requests, operate services, and detect abuse.</td><td data-label="Where it is handled">TeachAtlas support and providers involved in hosting, email, payment, and licensing.</td></tr>
+        </tbody>
+      </table>
 
-<p>
-  TeachAtlas is a browser extension that helps users create
-  illustrated step-by-step instructions by recording supported
-  browser interactions.
-</p>
+      <h3>2. Recording and screenshot safeguards</h3>
+      <p>Recording begins when you use the extension's recording controls on a supported website. The extension is intended to capture actions and the context needed for a guide, not what you type into password or other text-entry fields as step descriptions. Screenshot capture is controlled by available settings and restrictions in the installed version.</p>
+      <p>Visible screenshots can nonetheless contain personal or confidential information displayed on a webpage. TeachAtlas applies safeguards intended to skip some sensitive content, but no automated safeguard can identify everything. You are responsible for checking and, where needed, removing or redacting information before exporting or sharing.</p>
 
-<nav>
-  <a href="#privacy">Privacy Policy</a>
-  <a href="#terms">Terms of Service</a>
-  <a href="#billing">Billing & Cancellations</a>
-  <a href="#contact">Contact</a>
-</nav>
+      <h3>3. Local storage, exports, and backups</h3>
+      <p>Saved guides and screenshots are kept locally using browser storage, which can include extension storage and IndexedDB. TeachAtlas does not currently offer hosted cloud synchronization of guide libraries. The extension does not automatically send your recorded guide content or screenshots to a TeachAtlas server as part of ordinary recording and licensing.</p>
+      <p>When you export, print, download, or share a guide, that copy is handled outside the extension. Deleting a guide in TeachAtlas does not erase exported files, browser downloads, your backups, or copies shared with other people. Browser cleanup, profile deletion, device failure, or uninstalling may remove local data; keep backups of important work.</p>
 
-<section id="privacy">
-  <h2>Privacy Policy</h2>
+      <h3>4. Permissions and website access</h3>
+      <p>TeachAtlas may ask for access to supported webpages or browser capabilities to recognize interactions, capture optional screenshots, save guides, and perform user-requested functions. Permission prompts and supported websites vary by browser and extension version. Browser-internal, protected, or restricted pages may be unavailable.</p>
+      <p>Browser activity and page information are processed for the user-requested guide-building function, not to create a browsing-history advertising profile.</p>
 
-  <h3>1. Overview</h3>
-  <p>
-    TeachAtlas is designed to help users document workflows
-    while keeping recorded guides on their own devices.
-    This policy describes the data handled by the
-    TeachAtlas browser extension.
-  </p>
+      <h3>5. Pro activation and service providers</h3>
+      <p>Purchases and subscription management use <a href="https://stripe.com/privacy" rel="noopener noreferrer">Stripe</a>. Activation and entitlement checks communicate with a TeachAtlas licensing service hosted on <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">Cloudflare</a>. TeachAtlas web pages are hosted through <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub Pages</a>. Those providers may process technical, transactional, or account data needed to perform their services under their respective policies.</p>
+      <p>When the extension checks whether a Pro subscription is eligible, the license credential and necessary validation information are transmitted securely to the licensing service. Your recorded guides and screenshots are not required for this check.</p>
 
-  <h3>2. Information the Extension Processes</h3>
-  <p>
-    When recording is enabled, TeachAtlas may process
-    browser interactions, including clicked controls,
-    action descriptions, click positions, navigation
-    events, and optional screenshots of visible web pages.
-  </p>
-  <p>
-    Screenshots may contain visible website content,
-    including information displayed on the page.
-    Users should review captured materials before
-    saving, exporting, or sharing them.
-  </p>
+      <h3>6. Selling, advertising, and disclosure</h3>
+      <p>TeachAtlas does not sell your recorded guide content or screenshots, and does not use them for targeted advertising. We do not provide recorded guides to advertisers. We may disclose information to the service providers described above when needed to deliver the service, respond to lawful process, investigate security incidents, or protect users and the service in accordance with applicable law.</p>
+      <p>Use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
 
-  <h3>3. Local Storage</h3>
-  <p>
-    The current TeachAtlas extension stores recorded
-    guides and related information locally within
-    the user's browser profile.
-  </p>
-  <p>
-    Screenshots are stored locally using browser storage
-    technologies, including IndexedDB.
-    TeachAtlas does not currently provide a cloud
-    synchronization or hosted guide-storage service.
-  </p>
+      <h3>7. Retention and deletion</h3>
+      <p>Guide content remains in browser storage until you delete it, clear that browser storage, or otherwise remove the relevant profile or extension data. TeachAtlas does not remotely erase independently exported copies.</p>
+      <p>Subscription, license, transaction, and support records are retained as needed to provide paid access, address disputes or fraud, keep required accounting records, or meet applicable legal obligations. We do not promise that canceling a subscription immediately deletes transaction or license records.</p>
 
-  <h3>4. Website Access and Permissions</h3>
-  <p>
-    TeachAtlas requires certain browser permissions
-    to record actions and optionally capture screenshots.
-    Some website access must be enabled by the user.
-  </p>
-  <p>
-    Website access is used to provide the requested
-    recording functionality. Certain browser-protected
-    pages cannot be recorded.
-  </p>
+      <h3>8. Privacy questions and requests</h3>
+      <p>For requests relating to personal data handled by TeachAtlas, including access, correction, or deletion where applicable, email <a href="mailto:bkq421@gmail.com?subject=TeachAtlas%20Privacy%20Request">bkq421@gmail.com</a>. We may need to verify that a request concerns your account before disclosing or changing records. To remove local guide content, use the extension's deletion controls and remove any separate exports or backups yourself.</p>
 
-  <h3>5. Sensitive Information</h3>
-  <p>
-    TeachAtlas does not intentionally record values
-    entered into password fields or other text-entry
-    fields as step descriptions.
-  </p>
-  <p>
-    The extension includes safeguards intended to
-    prevent screenshots on pages containing certain
-    sensitive form elements, entered information,
-    embedded content, or other potentially private areas.
-  </p>
-  <p>
-    These safeguards are not guaranteed to identify
-    every type of sensitive information.
-    Users should avoid recording confidential,
-    financial, medical, or otherwise private
-    information and should inspect guides before sharing.
-  </p>
+      <h3>9. Children and international use</h3>
+      <p>TeachAtlas is designed for educators, businesses, and other general audiences, not for children under 13 to use independently. We do not knowingly seek personal information from children under 13 through our billing or licensing systems. Educators and organizations are responsible for complying with laws and permissions relevant to any student or third-party information appearing in guides.</p>
+      <p>Services and infrastructure may process information in countries other than yours. Rights and legal requirements vary by location.</p>
 
-  <h3>6. Data Sharing</h3>
-  <p>
-    The current extension does not automatically upload
-    recorded guides or screenshots to a TeachAtlas server.
-    Users may choose to export their guides and share
-    those files with others.
-  </p>
-  <p>
-    Users are responsible for deciding where exported
-    files are stored and with whom they are shared.
-  </p>
+      <h3>10. Policy changes</h3>
+      <p>We may revise this policy when product features or data practices change. A revised version and its effective update date will be posted here. Where required, we will provide additional notice or seek consent before materially different processing.</p>
+    </section>
 
-  <h3>7. Payments</h3>
-  <p>
-    Paid subscriptions may be offered through Stripe.
-    When paid subscriptions become available, payment
-    and billing information will be processed through
-    Stripe's hosted payment services rather than being
-    entered directly into the TeachAtlas extension.
-  </p>
-  <p>
-    Stripe's handling of payment information is subject
-    to its own privacy policies.
-  </p>
+    <section id="terms" class="section" aria-labelledby="terms-title">
+      <h2 id="terms-title">Terms of Use</h2>
+      <h3>1. Agreement and service</h3>
+      <p>By installing or using TeachAtlas, you agree to these terms. TeachAtlas helps users capture supported browser workflows, create and edit instructions, and save, back up, or export guides. The capabilities available to Free and Pro users may vary by installed version and subscription status. The extension does not work on every website or browser page.</p>
 
-  <h3>8. Data Retention and Deletion</h3>
-  <p>
-    Locally saved guides remain in the user's browser
-    storage until they are deleted or that storage
-    is cleared. TeachAtlas provides guide-management
-    and deletion features.
-  </p>
-  <p>
-    Exported copies and backups are separate files.
-    Deleting a guide from the extension does not
-    automatically delete copies stored elsewhere.
-  </p>
+      <h3>2. Free and paid access</h3>
+      <p>TeachAtlas offers a Free plan with usage and feature limitations and a paid TeachAtlas Pro subscription with additional functionality. Current pricing and the features offered are shown in the extension, product website, and checkout where applicable. Pro access depends on a valid subscription and successful license verification. Do not share activation codes with unauthorized users.</p>
 
-  <h3>9. Children's Privacy</h3>
-  <p>
-    TeachAtlas is intended for educators, professionals,
-    and other users who can lawfully use the service.
-    It is not designed to knowingly collect personal
-    information from children under 13.
-  </p>
+      <h3>3. Permitted use and restrictions</h3>
+      <p>You may use TeachAtlas for lawful personal, educational, or internal business documentation. You must have appropriate authority to record webpages, use website content, and distribute screenshots or guides. Do not use TeachAtlas to infringe others' intellectual-property rights, invade privacy, bypass access restrictions, or collect information unlawfully.</p>
 
-  <h3>10. Policy Updates</h3>
-  <p>
-    This Privacy Policy may be updated when TeachAtlas
-    changes its features, data practices, or services.
-    The latest version will be posted on this page.
-  </p>
-</section>
+      <h3>4. Your guide content</h3>
+      <p>You retain any rights you have in your original guide content. You are responsible for reviewing its accuracy, securing permissions, and controlling where it is exported or shared. TeachAtlas does not acquire ownership of your original instructions merely because you create them in the extension.</p>
 
-<section id="terms">
-  <h2>Terms of Service</h2>
+      <h3>5. Software ownership</h3>
+      <p>TeachAtlas and its original software, designs, trademarks, and documentation remain the property of their respective rights holders. Use of the extension does not transfer ownership or grant permission to redistribute the software outside applicable license terms or law.</p>
 
-  <h3>1. Acceptance of Terms</h3>
-  <p>
-    By installing or using TeachAtlas, users agree
-    to these terms and applicable laws.
-    Users who do not agree should not use the extension.
-  </p>
+      <h3>6. Availability, updates, and backups</h3>
+      <p>We may fix bugs, add features, revise plans, or discontinue particular functionality. We do not guarantee compatibility with all websites, browser changes, or third-party services. Where a material change affects paid users, we will handle it as required by applicable law. Maintain separate backups of important local guides.</p>
 
-  <h3>2. Description of Service</h3>
-  <p>
-    TeachAtlas provides tools for recording supported
-    website interactions, creating illustrated guides,
-    editing instructions, managing locally saved guides,
-    and exporting documentation.
-  </p>
-  <p>
-    Features may change as the software is maintained
-    and improved. Some websites or browser environments
-    may restrict recording or screenshot functionality.
-  </p>
+      <h3>7. Suspension or loss of access</h3>
+      <p>Pro features may become unavailable if the subscription expires, is canceled, a payment fails, or license validation cannot establish eligibility. We may limit or suspend access where reasonably necessary to address fraud, abuse, security risks, or violations of these terms, subject to applicable law. Loss of Pro eligibility does not itself constitute a request to delete local guide files.</p>
 
-  <h3>3. Acceptable Use</h3>
-  <p>
-    Users must use TeachAtlas only for lawful purposes
-    and must respect the privacy, intellectual property,
-    and access rights of others.
-  </p>
-  <p>
-    Users must not use the extension to collect,
-    disclose, or distribute private information
-    without appropriate authorization.
-  </p>
+      <h3>8. Disclaimers and liability</h3>
+      <p>To the extent permitted by law, TeachAtlas is supplied on an "as is" and "as available" basis. We do not guarantee uninterrupted operation, complete recordings, or error-free exports. Nothing in these terms excludes or reduces legal rights, warranties, or remedies that cannot lawfully be excluded.</p>
 
-  <h3>4. User-Created Content</h3>
-  <p>
-    Users retain their rights in materials they create.
-    Users are responsible for the content, accuracy,
-    permissions, and distribution of their guides.
-  </p>
+      <h3>9. Contact</h3>
+      <p>Questions about these terms may be sent to <a href="mailto:bkq421@gmail.com">bkq421@gmail.com</a>.</p>
+    </section>
 
-  <h3>5. Software Availability</h3>
-  <p>
-    TeachAtlas is provided on an as-available basis.
-    Compatibility with every website, operating system,
-    or browser configuration is not guaranteed.
-  </p>
-  <p>
-    Users should maintain backups of important guides
-    and review exported documents before relying on them.
-  </p>
+    <section id="billing" class="section" aria-labelledby="billing-title">
+      <h2 id="billing-title">Subscriptions, Cancellations &amp; Refunds</h2>
+      <h3>1. Plans and price</h3>
+      <p>TeachAtlas Free is available without a paid subscription. TeachAtlas Pro is offered at <strong>$9.00 USD per month</strong>, plus any applicable tax shown at checkout. The payment page displays the applicable price, billing frequency, and any offer terms before purchase. A Pro subscription is separate from the free download of the browser extension.</p>
 
-  <h3>6. Intellectual Property</h3>
-  <p>
-    The TeachAtlas name, software, interface,
-    and original materials are protected by applicable
-    intellectual property laws.
-    These terms do not transfer ownership of
-    the software to users.
-  </p>
+      <h3>2. Automatic renewal</h3>
+      <p>Pro subscriptions renew and are charged automatically each month until canceled. By subscribing through Stripe checkout, you authorize the recurring charges disclosed there. Receipts, available payment methods, and billing details are managed through Stripe.</p>
 
-  <h3>7. Disclaimers</h3>
-  <p>
-    To the extent permitted by applicable law,
-    TeachAtlas is provided without guarantees
-    of uninterrupted operation, error-free results,
-    or suitability for a particular purpose.
-    Nothing in these terms excludes rights or
-    remedies that cannot lawfully be excluded.
-  </p>
+      <h3>3. How to cancel</h3>
+      <p>You can manage or cancel your subscription in the <a href="https://billing.stripe.com/p/login/aFa9AV1mReOg6xP44S2wU00" rel="noopener noreferrer">TeachAtlas Stripe billing portal</a>. If you cannot access the portal, contact <a href="mailto:bkq421@gmail.com?subject=TeachAtlas%20Cancellation%20Help">TeachAtlas Support</a> for assistance. Uninstalling the extension or deleting a local guide does <strong>not</strong> cancel recurring payments.</p>
+      <p>The portal and your subscription details indicate when cancellation takes effect. Ordinarily, cancellation stops future renewals and Pro access continues until the end of the already-paid period, unless different conditions are shown during cancellation or required by law. Keep your cancellation confirmation.</p>
 
-  <h3>8. Changes to the Service</h3>
-  <p>
-    TeachAtlas may be updated, modified, or discontinued.
-    Material changes affecting paid subscribers will
-    be addressed in accordance with applicable law
-    and the subscription terms.
-  </p>
+      <h3>4. Refunds and billing disputes</h3>
+      <p>Canceling does not automatically refund charges that have already been processed, and partial billing periods are not automatically refunded. To ask for a refund or report an accidental charge, duplicate charge, or billing problem, email <a href="mailto:bkq421@gmail.com?subject=TeachAtlas%20Billing%20or%20Refund%20Request">bkq421@gmail.com</a> from the address associated with the subscription, if possible. Include the date and nature of the problem, but <strong>never send payment-card details or your activation code</strong>.</p>
+      <p>Refund requests are assessed individually based on the circumstances, the purchase terms, and applicable law. This policy does not limit any non-waivable consumer rights. Approved refunds are issued through Stripe to the original payment method when available.</p>
 
-  <h3>9. Contact</h3>
-  <p>
-    Questions about these terms may be sent to
-    <a href="mailto:bkq421@gmail.com">bkq421@gmail.com</a>.
-  </p>
-</section>
+      <h3>5. Activation and expiration</h3>
+      <p>After successful checkout, the purchaser can obtain a TeachAtlas Pro activation code through the activation process. Pro eligibility is checked through the licensing service. When paid eligibility ends, Pro-only functions may become unavailable; locally saved guides are not automatically uploaded to a TeachAtlas cloud library.</p>
 
-<section id="billing">
-  <h2>Subscriptions, Cancellations & Refunds</h2>
+      <h3>6. Billing help</h3>
+      <p>For billing, activation, and subscription assistance, visit the <a href="support.html">TeachAtlas Support Center</a> or email <a href="mailto:bkq421@gmail.com">bkq421@gmail.com</a>.</p>
+    </section>
 
-  <h3>1. Subscription Pricing</h3>
-  <p>
-    TeachAtlas Pro is planned as a recurring subscription
-    priced at $9.00 USD per month, excluding any
-    applicable taxes or additional charges disclosed
-    at checkout.
-  </p>
-  <p>
-    The final price and billing terms will be displayed
-    before a customer confirms a paid subscription.
-  </p>
-
-  <h3>2. Recurring Billing</h3>
-  <p>
-    Paid monthly subscriptions renew automatically
-    unless canceled. Customers authorize recurring
-    charges when they complete subscription checkout.
-  </p>
-
-  <h3>3. Cancellation</h3>
-  <p>
-    Customers can manage and cancel their subscriptions
-    through the Stripe customer billing portal.
-  </p>
-  <p>
-    Unless otherwise stated at checkout, cancellation
-    takes effect at the end of the current paid
-    billing period. Customers can continue using
-    paid features until that period ends.
-  </p>
-  <p>
-    Cancellation prevents future renewals but does
-    not automatically refund an earlier charge.
-  </p>
-
-  <h3>4. Refund Requests</h3>
-  <p>
-    Customers may request a refund or report a billing
-    problem by contacting
-    <a href="mailto:bkq421@gmail.com">bkq421@gmail.com</a>.
-  </p>
-  
-<p>
-  For billing assistance, refunds, or subscription questions,
-  visit our <a href="support.html">TeachAtlas Support Center</a>.
-  
-</p>
-
-  <p>
-    Refund requests will be reviewed based on the
-    circumstances of the purchase, applicable law,
-    and any refund terms disclosed at checkout.
-    This policy does not limit mandatory statutory
-    refund or consumer protection rights.
-  </p>
-
-  <h3>5. Payment Processing</h3>
-  <p>
-    Subscriptions are processed using Stripe.
-    Available payment methods, taxes, receipts,
-    and billing details are presented during checkout
-    or through the customer billing portal.
-  </p>
-
-  <h3>6. Subscription Support</h3>
-  <p>
-    For subscription questions, billing concerns,
-    or cancellation assistance, contact
-    <a href="mailto:bkq421@gmail.com">bkq421@gmail.com</a>.
-  </p>
-</section>
-
-<section id="contact">
-  <h2>Customer Support</h2>
-  <p>
-    For product questions, privacy inquiries,
-    technical support, or subscription assistance:
-  </p>
-  <p>
-    <strong>Email:</strong>
-    <a href="mailto:bkq421@gmail.com">bkq421@gmail.com</a>
-  </p>
-</section>
-
-<footer>
-  <p>&copy; 2026 TeachAtlas. All rights reserved.</p>
-  <p>
-    This page describes TeachAtlas's stated policies.
-    Applicable consumer and privacy laws continue to apply.
-  </p>
-</footer>
-
-<p style="text-align: center; margin: 30px 0;">
-  <a href="home.html">Visit the TeachAtlas Homepage</a>
-</p>
-
-<p style="text-align: center; margin: 30px 0;">
-  <a href="support.html">TeachAtlas Support Center</a>
-</p>
-
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact &amp; Customer Support</h2>
+      <p><strong>Email:</strong> <a href="mailto:bkq421@gmail.com">bkq421@gmail.com</a></p>
+      <p><strong>Support Center:</strong> <a href="support.html">TeachAtlas help, billing, and activation recovery</a></p>
+      <p><strong>Activation:</strong> <a href="activate.html">TeachAtlas Pro activation page</a></p>
+      <p class="small">Please do not send passwords, full card numbers, or activation credentials in support messages. For business identification and contact details, use the information provided in the applicable checkout and storefront disclosures.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 TeachAtlas. All rights reserved. Applicable consumer and privacy laws continue to apply.</p>
+    <p><a href="home.html">TeachAtlas homepage</a> &nbsp;·&nbsp; <a href="support.html">Support Center</a> &nbsp;·&nbsp; <a href="#privacy">Back to privacy policy</a></p>
+  </footer>
+</div>
 </body>
 </html>
