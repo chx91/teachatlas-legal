@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chx91.github.io/teachatlas-legal/sitemap.xml
