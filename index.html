@@ -6,6 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="TeachAtlas privacy policy for Chrome, Firefox, and Edge, including guide recording, optional screenshots, Cloud Share, subscriptions, cancellations, refunds, and support.">
   <title>TeachAtlas | Privacy, Terms & Billing</title>
+  <meta name="robots" content="index, follow">
+  <!-- The directory root and /index.html serve the same static file.
+       Redirect bare root only; preserve explicit /index.html for store privacy links.
+       No canonical here because the root URL redirects to a different page. -->
+  <script>
+  (function(){
+    var p=window.location.pathname;
+    var policyAnchor=/^#(privacy|terms|billing|contact)$/i.test(window.location.hash);
+    if(p==='/teachatlas-legal/' && !policyAnchor){
+      window.location.replace('home.html'+window.location.search+window.location.hash);
+    }
+  })();
+  </script>
   <style>
     :root { color-scheme: light; --blue:#125bb0; --navy:#122c52; --muted:#4d6177; --line:#d9e3ed; --bg:#f5f8fc; --white:#fff; --yellow:#ffd94c; }
     * { box-sizing:border-box; }
