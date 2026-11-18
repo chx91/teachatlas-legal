@@ -1,0 +1,151 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+7 0 obj
+<< /Length 3130 >>
+stream
+0.043 0.224 0.494 rg 0 722 612 70 re f
+1.000 0.831 0.231 rg 0 722 12 70 re f
+1.000 1.000 1.000 rg BT /F2 19 Tf 42 758 Td (STANDARD OPERATING PROCEDURE) Tj ET
+1.000 1.000 1.000 rg BT /F1 9 Tf 43 737 Td (FREE PRINTABLE SOP TEMPLATE  |  TeachAtlas) Tj ET
+0.345 0.408 0.486 rg BT /F1 8 Tf 43 32 Td (teachatlas.github.io  |  Free resource - no signup required) Tj ET
+0.345 0.408 0.486 rg BT /F2 8 Tf 538 32 Td (1 / 2) Tj ET
+0.812 0.859 0.918 RG 1 w 42 47 m 570 47 l S
+0.918 0.949 1.000 rg 42 687 528 21 re f
+0.043 0.224 0.494 rg BT /F2 10 Tf 51 693 Td (DOCUMENT CONTROL) Tj ET
+0.043 0.224 0.494 rg BT /F2 9 Tf 52 668 Td (Procedure title) Tj ET
+0.812 0.859 0.918 RG 1 w 52 654 m 552 654 l S
+0.043 0.224 0.494 rg BT /F2 9 Tf 52 632 Td (SOP ID) Tj ET
+0.812 0.859 0.918 RG 1 w 52 618 m 292 618 l S
+0.043 0.224 0.494 rg BT /F2 9 Tf 325 632 Td (Version / status) Tj ET
+0.812 0.859 0.918 RG 1 w 325 618 m 565 618 l S
+0.043 0.224 0.494 rg BT /F2 9 Tf 52 598 Td (Owner / department) Tj ET
+0.812 0.859 0.918 RG 1 w 52 584 m 292 584 l S
+0.043 0.224 0.494 rg BT /F2 9 Tf 325 598 Td (Approver) Tj ET
+0.812 0.859 0.918 RG 1 w 325 584 m 565 584 l S
+0.043 0.224 0.494 rg BT /F2 9 Tf 52 564 Td (Effective date) Tj ET
+0.812 0.859 0.918 RG 1 w 52 550 m 292 550 l S
+0.043 0.224 0.494 rg BT /F2 9 Tf 325 564 Td (Next review date) Tj ET
+0.812 0.859 0.918 RG 1 w 325 550 m 565 550 l S
+0.918 0.949 1.000 rg 42 524 528 21 re f
+0.043 0.224 0.494 rg BT /F2 10 Tf 51 530 Td (PURPOSE - WHY THIS PROCEDURE EXISTS) Tj ET
+0.812 0.859 0.918 RG 1 w 48 505 m 565 505 l S
+0.812 0.859 0.918 RG 1 w 48 485 m 565 485 l S
+0.918 0.949 1.000 rg 42 448 528 21 re f
+0.043 0.224 0.494 rg BT /F2 10 Tf 51 454 Td (SCOPE - WHAT IS AND IS NOT INCLUDED) Tj ET
+0.812 0.859 0.918 RG 1 w 48 429 m 565 429 l S
+0.812 0.859 0.918 RG 1 w 48 409 m 565 409 l S
+0.918 0.949 1.000 rg 42 372 528 21 re f
+0.043 0.224 0.494 rg BT /F2 10 Tf 51 378 Td (ROLES / PREREQUISITES / REQUIRED TOOLS) Tj ET
+0.812 0.859 0.918 RG 1 w 48 353 m 565 353 l S
+0.812 0.859 0.918 RG 1 w 48 333 m 565 333 l S
+0.918 0.949 1.000 rg 42 290 528 21 re f
+0.043 0.224 0.494 rg BT /F2 10 Tf 51 296 Td (STEP-BY-STEP PROCEDURE) Tj ET
+1.000 0.831 0.231 rg 43 248 31 26 re f
+0.043 0.224 0.494 rg BT /F2 12 Tf 54 256 Td (1) Tj ET
+0.075 0.161 0.290 rg BT /F2 9 Tf 85 264 Td (Action / instruction:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 245 m 565 245 l S
+0.345 0.408 0.486 rg BT /F2 9 Tf 85 227 Td (Expected result / check:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 210 m 565 210 l S
+1.000 0.831 0.231 rg 43 168 31 26 re f
+0.043 0.224 0.494 rg BT /F2 12 Tf 54 176 Td (2) Tj ET
+0.075 0.161 0.290 rg BT /F2 9 Tf 85 184 Td (Action / instruction:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 165 m 565 165 l S
+0.345 0.408 0.486 rg BT /F2 9 Tf 85 147 Td (Expected result / check:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 130 m 565 130 l S
+1.000 0.831 0.231 rg 43 88 31 26 re f
+0.043 0.224 0.494 rg BT /F2 12 Tf 54 96 Td (3) Tj ET
+0.075 0.161 0.290 rg BT /F2 9 Tf 85 104 Td (Action / instruction:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 85 m 565 85 l S
+0.345 0.408 0.486 rg BT /F2 9 Tf 85 67 Td (Expected result / check:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 50 m 565 50 l S
+endstream
+endobj
+8 0 obj
+<< /Length 2906 >>
+stream
+0.043 0.224 0.494 rg 0 722 612 70 re f
+1.000 0.831 0.231 rg 0 722 12 70 re f
+1.000 1.000 1.000 rg BT /F2 19 Tf 42 758 Td (STANDARD OPERATING PROCEDURE) Tj ET
+1.000 1.000 1.000 rg BT /F1 9 Tf 43 737 Td (FREE PRINTABLE SOP TEMPLATE  |  TeachAtlas) Tj ET
+0.345 0.408 0.486 rg BT /F1 8 Tf 43 32 Td (teachatlas.github.io  |  Free resource - no signup required) Tj ET
+0.345 0.408 0.486 rg BT /F2 8 Tf 538 32 Td (2 / 2) Tj ET
+0.812 0.859 0.918 RG 1 w 42 47 m 570 47 l S
+0.918 0.949 1.000 rg 42 689 528 21 re f
+0.043 0.224 0.494 rg BT /F2 10 Tf 51 695 Td (PROCEDURE - CONTINUED) Tj ET
+1.000 0.831 0.231 rg 43 646 31 26 re f
+0.043 0.224 0.494 rg BT /F2 12 Tf 54 654 Td (4) Tj ET
+0.075 0.161 0.290 rg BT /F2 9 Tf 85 662 Td (Action / instruction:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 643 m 565 643 l S
+0.345 0.408 0.486 rg BT /F2 9 Tf 85 625 Td (Expected result / check:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 608 m 565 608 l S
+1.000 0.831 0.231 rg 43 565 31 26 re f
+0.043 0.224 0.494 rg BT /F2 12 Tf 54 573 Td (5) Tj ET
+0.075 0.161 0.290 rg BT /F2 9 Tf 85 581 Td (Action / instruction:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 562 m 565 562 l S
+0.345 0.408 0.486 rg BT /F2 9 Tf 85 544 Td (Expected result / check:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 527 m 565 527 l S
+1.000 0.831 0.231 rg 43 484 31 26 re f
+0.043 0.224 0.494 rg BT /F2 12 Tf 54 492 Td (6) Tj ET
+0.075 0.161 0.290 rg BT /F2 9 Tf 85 500 Td (Action / instruction:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 481 m 565 481 l S
+0.345 0.408 0.486 rg BT /F2 9 Tf 85 463 Td (Expected result / check:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 446 m 565 446 l S
+1.000 0.831 0.231 rg 43 403 31 26 re f
+0.043 0.224 0.494 rg BT /F2 12 Tf 54 411 Td (7) Tj ET
+0.075 0.161 0.290 rg BT /F2 9 Tf 85 419 Td (Action / instruction:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 400 m 565 400 l S
+0.345 0.408 0.486 rg BT /F2 9 Tf 85 382 Td (Expected result / check:) Tj ET
+0.812 0.859 0.918 RG 1 w 85 365 m 565 365 l S
+0.918 0.949 1.000 rg 42 339 528 21 re f
+0.043 0.224 0.494 rg BT /F2 10 Tf 51 345 Td (COMPLETION AND QUALITY CHECKS) Tj ET
+0.812 0.859 0.918 RG 1 w 48 319 m 565 319 l S
+0.812 0.859 0.918 RG 1 w 48 299 m 565 299 l S
+0.918 0.949 1.000 rg 42 262 528 21 re f
+0.043 0.224 0.494 rg BT /F2 10 Tf 51 268 Td (EXCEPTIONS / ESCALATION / PRIVACY SAFEGUARDS) Tj ET
+0.812 0.859 0.918 RG 1 w 48 242 m 565 242 l S
+0.812 0.859 0.918 RG 1 w 48 222 m 565 222 l S
+0.918 0.949 1.000 rg 42 187 528 21 re f
+0.043 0.224 0.494 rg BT /F2 10 Tf 51 193 Td (RECORDS AND REVISION HISTORY) Tj ET
+0.043 0.224 0.494 rg BT /F2 9 Tf 52 164 Td (Version) Tj ET
+0.043 0.224 0.494 rg BT /F2 9 Tf 155 164 Td (Date) Tj ET
+0.043 0.224 0.494 rg BT /F2 9 Tf 260 164 Td (Change summary) Tj ET
+0.043 0.224 0.494 rg BT /F2 9 Tf 480 164 Td (Approved by) Tj ET
+0.812 0.859 0.918 RG 1 w 52 150 m 565 150 l S
+0.812 0.859 0.918 RG 1 w 52 126 m 565 126 l S
+0.812 0.859 0.918 RG 1 w 52 102 m 565 102 l S
+0.812 0.859 0.918 RG 1 w 52 78 m 565 78 l S
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000000402 00000 n 
+0000000538 00000 n 
+0000003719 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+6676
+%%EOF

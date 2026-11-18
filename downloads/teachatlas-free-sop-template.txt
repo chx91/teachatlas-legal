@@ -1,0 +1,48 @@
+STANDARD OPERATING PROCEDURE (SOP)
+Procedure title: [Enter title]
+SOP ID: [Enter identifier]     Version: 1.0     Status: [Draft / Approved]
+Owner / department: [Enter name or role]
+Effective date: [YYYY-MM-DD]     Next review date: [YYYY-MM-DD]
+Approved by: [Approver name, title, and date]
+
+1. PURPOSE
+[What consistent outcome is this SOP designed to achieve?]
+
+2. SCOPE
+[What workflow, people, and systems does it cover? What is excluded?]
+
+3. RESPONSIBILITIES
+[Who performs the task? Who approves it and who handles exceptions?]
+
+4. PREREQUISITES / SAFETY
+[Required software, access permissions, tools, training, and precautions.]
+
+5. PROCEDURE
+Step 1: [Action - start with a verb]
+Expected result: [How to verify success]
+Reference or screenshot: [Optional]
+
+Step 2: [Action]
+Expected result: [Verification]
+Reference or screenshot: [Optional]
+
+Step 3: [Action]
+Expected result: [Verification]
+Reference or screenshot: [Optional]
+
+[Add more steps. Include alternatives for decision points.]
+
+6. COMPLETION / QUALITY CHECKS
+[Checks, sign-off, and what confirms the work is finished.]
+
+7. EXCEPTIONS / ESCALATION
+[What to do if steps fail, approvals are missing, or results differ.]
+
+8. RECORDS / REFERENCES / PRIVACY
+[Where evidence is stored, related policies, and data-handling rules.]
+
+9. REVISION HISTORY
+Version | Date | Change summary | Changed by | Approved by
+1.0 | [Date] | Initial procedure | [Name] | [Name]
+
+Adapt this template to the risks and requirements of your organization.
