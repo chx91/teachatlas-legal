@@ -107,6 +107,7 @@
     background:#f9fcff!important;border:0!important;border-bottom:1px solid #cadbf0!important;
     box-shadow:0 13px 26px rgba(14,51,92,.17)!important;
   }
+  .ta-site-mobile-menu:not([open]) > .ta-site-mobile-links{display:none!important}
   .ta-site-bar .ta-site-mobile-links a{
     display:block!important;width:100%;margin:0!important;
     padding:11px 2px!important;border:0!important;border-radius:0!important;
