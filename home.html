@@ -436,6 +436,117 @@
     .mock-divider{margin:10px 0}
     .art-note{margin:20px 0 0}
   }
+
+/* Compact homepage layout, November 22 redesign: real links are visibly links. */
+.top-action{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;background:#0d59be;color:#fff;text-decoration:none;font-size:12px;font-weight:800;white-space:nowrap;padding:11px 15px;border-radius:6px}
+.top-action:hover{background:#063a88}
+.header-inner{gap:11px}
+.header .brand{margin-right:auto}
+.new-hero{background:linear-gradient(115deg,#fff,#f1f8ff 75%,#dfedff);overflow:hidden}
+.new-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:45px;padding:67px 0 68px}
+.new-kicker{font-size:11px!important;letter-spacing:.15em;text-transform:uppercase;font-weight:850;color:#0d59be;margin:0 0 12px}
+.new-title{font-size:clamp(44px,5.6vw,72px);line-height:1.09;letter-spacing:-.067em;margin:0 0 19px}
+.new-title span{display:block}.new-title span:last-child{color:#0d59be}
+.new-lead{font-size:17px;color:#48617f;line-height:1.65;max-width:550px;margin:0 0 22px}
+.new-actions{display:flex;flex-wrap:wrap;gap:10px}
+.new-button{min-height:49px;display:inline-flex;align-items:center;justify-content:center;padding:11px 17px;text-align:center;border-radius:6px;font-size:13px;font-weight:800;text-decoration:none}
+.new-button.primary{background:#0d59be;color:white}
+.new-button.primary:hover{background:#063a88}
+.new-button.secondary{background:#fff;border:1px solid #a4c0e0;color:#063a88}
+.new-button.secondary:hover{background:#e6f3ff}
+.new-small{font-size:12px;line-height:1.6;color:#657d99;margin:15px 0 0}
+.new-small a{color:#0d59be;text-underline-offset:3px}
+.new-preview{min-width:0;width:100%;max-width:388px;margin-inline:auto}
+.new-preview-head{text-align:left;color:white;background:linear-gradient(115deg,#0750b7,#1879ea);border-radius:10px 10px 0 0;padding:16px 20px}
+.new-preview-head strong{font-size:25px;letter-spacing:-.05em}.new-preview-head strong span{color:#ffc72d}
+.new-preview-head small{display:block;font-size:11px;color:#eaf5ff}
+.new-preview-body{background:#fff;border:1px solid #c4dbf3;border-top:0;padding:20px;border-radius:0 0 10px 10px;box-shadow:0 20px 38px #1755a524}
+.new-preview-line{display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:1px solid #dce7f3;padding:0 0 12px;margin-bottom:14px}
+.new-preview-line span{font-size:10px;letter-spacing:.08em;color:#0d59be;font-weight:800}.new-preview-line b{font-size:9px;padding:4px 6px;background:#e4f5eb;color:#2a7055}
+.new-preview-body h2{font-size:20px;line-height:1.3;letter-spacing:-.045em;margin:0 0 13px}
+.new-sample{display:flex;gap:12px;align-items:center;border-top:1px solid #e7eef7;padding:11px 0}
+.new-sample i{position:relative;width:62px;height:43px;flex:0 0 62px;border:1px solid #c7dbf1;background:linear-gradient(130deg,#d4e7ff,#f6fbff);border-radius:4px}
+.new-sample i::before{content:"";position:absolute;left:10px;right:10px;top:10px;height:5px;background:#91b3e2;box-shadow:0 10px 0 #d2e0f3,0 19px 0 #d2e0f3}
+.new-sample i::after{content:"";width:13px;height:13px;border:2px solid white;border-radius:50%;background:#ffc72d;position:absolute;right:6px;bottom:3px}
+.new-sample p{margin:0}.new-sample strong{display:block;font-size:12px;color:#19385e}.new-sample small{font-size:11px;color:#66819e}
+.new-preview-foot{display:flex;align-items:center;justify-content:space-between;gap:7px;margin-top:11px}.new-preview-foot span{font-size:10px;color:#6e86a2}.new-preview-foot b{font-size:10px;padding:8px 11px;background:#0d59be;color:white;border-radius:3px}
+.new-preview-note{font-size:10px;text-align:center;color:#6b809c;margin:12px 0 0}
+.new-how{padding:54px 0}
+.new-intro{display:grid;grid-template-columns:1fr 1.12fr;gap:35px;align-items:end}
+.new-how h2,.new-pricing h2,.new-resources h2,.new-faq h2{font-size:clamp(28px,3.5vw,42px);line-height:1.16;letter-spacing:-.06em}
+.new-intro>p{font-size:15px;color:#536d8a;line-height:1.7;margin:0}
+.new-process{display:grid;grid-template-columns:repeat(3,1fr);margin-top:30px;border-top:1px solid #d6e3f1;border-bottom:1px solid #d6e3f1}
+.new-process>div{padding:20px 21px 21px 0}
+.new-process>div+div{border-left:1px solid #d6e3f1;padding-left:21px}
+.new-process h3{font-size:19px;margin:0 0 6px;letter-spacing:-.035em}
+.new-process p,.new-uses{font-size:13px;color:#536d8a;line-height:1.65;margin:0}
+.new-uses{margin-top:17px}
+.new-pricing{background:#eff6ff;padding:57px 0 60px}
+.new-pricing h2{margin-bottom:26px}
+.new-plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid #c8ddf2;border-radius:10px;overflow:hidden;background:#fff}
+.new-plan{padding:29px 32px 26px;min-width:0}
+.new-plan.pro{background:#fafdff;border-left:1px solid #c8ddf2}
+.new-plan h3{font-size:22px;margin:0;letter-spacing:-.04em}
+.new-price{font-size:46px;font-weight:850;letter-spacing:-.07em;line-height:1.1;margin:13px 0 10px}
+.new-price small{font-size:13px;font-weight:500;letter-spacing:0;color:#647b98}
+.new-plan-lead{font-size:13px;color:#536d8a;margin:0 0 16px}
+.new-plan ul{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:10px}
+.new-plan li{display:grid;grid-template-columns:13px 1fr;gap:10px;font-size:13px;line-height:1.5;color:#354e6c}
+.new-plan li::before{content:"✓";color:#0d59be;font-weight:900}
+.new-plan .new-button{width:100%}
+.new-note,.new-fine{font-size:11px;line-height:1.6;color:#697f9c;margin:13px 0 0}
+.new-share{background:#063a88;color:#fff;padding:36px 0}
+.new-share-grid{display:grid;grid-template-columns:1fr 1.3fr;align-items:center;gap:32px}
+.new-share h2{font-size:clamp(26px,3vw,37px);color:white;letter-spacing:-.05em}
+.new-share p{font-size:14px;line-height:1.7;color:#e5f0ff;margin:0}
+.new-share small{display:block;font-size:11px;line-height:1.6;color:#c8dff8;margin-top:7px}
+.new-resources{padding:46px 0}
+.new-resources-grid,.new-faq-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px}
+.new-real-links{display:grid;gap:10px;align-content:start}
+.new-real-links a{font-size:14px;font-weight:750;color:#0d59be;text-decoration:underline;text-underline-offset:4px}
+.new-real-links a:hover{color:#063a88}
+.new-faq{padding:39px 0 55px;border-top:1px solid #dce8f3}
+.new-faq-grid>div:last-child{border-top:1px solid #dce8f3}
+.new-faq details{padding:12px 0;border:0;border-bottom:1px solid #dce8f3;background:transparent;border-radius:0}
+.new-faq summary{list-style:none;cursor:pointer;font-size:14px;font-weight:750}
+.new-faq summary::-webkit-details-marker{display:none}
+.new-faq summary::after{content:"+";float:right;font-size:19px;font-weight:500;color:#0d59be}
+.new-faq details[open] summary::after{content:"−"}
+.new-faq details p{font-size:13px;line-height:1.7;color:#536d8a;margin:10px 0 0}
+.new-faq details a{color:#0d59be;text-underline-offset:3px}
+@media(max-width:780px){
+  .header-inner{gap:8px}
+  .nav{order:4}
+  .top-action{margin-left:auto;padding:9px 12px;font-size:11px}
+  .menu-button{order:3}
+  .new-hero-grid{grid-template-columns:1fr;padding:41px 0 44px;gap:27px}
+  .new-title{font-size:clamp(38px,8.8vw,60px)}
+  .new-lead{font-size:16px}
+  .new-preview{max-width:340px}
+  .new-intro,.new-share-grid,.new-resources-grid,.new-faq-grid{grid-template-columns:1fr;gap:16px}
+  .new-how{padding:39px 0}
+  .new-pricing{padding:42px 0 47px}
+  .new-share{padding:31px 0}
+  .new-resources{padding:34px 0}
+  .new-faq{padding:31px 0 42px}
+}
+@media(max-width:520px){
+  .new-hero-grid{padding-top:35px}
+  .new-title{font-size:clamp(37px,9vw,48px)}
+  .new-actions .new-button{flex:1 1 auto;font-size:12px;padding:11px 9px}
+  .new-process{display:block}
+  .new-process>div,.new-process>div+div{border-left:0;padding:13px 0}
+  .new-process>div+div{border-top:1px solid #dce8f3}
+  .new-plans{grid-template-columns:1fr}
+  .new-plan{padding:23px 22px}
+  .new-plan.pro{border-left:0;border-top:1px solid #c8ddf2}
+  .new-preview-body{padding:15px}
+  .new-preview-head{padding:13px 16px}
+  .brand{min-width:0}
+  .brand span{font-size:15px}
+}
+@media(max-width:355px){.brand span{display:none}.new-title{font-size:35px}}
+
 </style>
 </head>
 <body>
@@ -450,251 +561,116 @@
 </div>
 <header class="header">
   <div class="wrap header-inner">
-    <a class="brand" href="home.html" aria-label="TeachAtlas homepage">
-      <img src="teachatlas-store-icon.png" alt="" width="43" height="43">
-      <span>TeachAtlas</span>
-    </a>
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
-      <span class="menu-lines" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-label">Menu</span>
-    </button>
+    <a class="brand" href="home.html" aria-label="TeachAtlas homepage"><img src="teachatlas-store-icon.png" alt="" width="43" height="43"><span>TeachAtlas</span></a>
     <nav class="nav" id="site-nav" aria-label="Main navigation">
-      <a href="#why">Why TeachAtlas</a>
-      <a href="#use-cases">Use Cases</a>
-      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
       <a href="#pricing">Pricing</a>
+      <a href="#faq">Questions</a>
       <a href="support.html">Support</a>
-      <a class="nav-cta" href="https://chromewebstore.google.com/detail/hfdninhgfekgelahihnpicfgckiepjgm?utm_source=teachatlas_website&amp;utm_medium=referral&amp;utm_campaign=homepage_nav">Install Free ↗</a>
     </nav>
+    <a class="top-action" href="https://chromewebstore.google.com/detail/hfdninhgfekgelahihnpicfgckiepjgm?utm_source=teachatlas_website&amp;utm_medium=referral&amp;utm_campaign=homepage_nav">Install Free</a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav"><span class="menu-lines" aria-hidden="true"><i></i><i></i><i></i></span><span class="menu-label">Menu</span></button>
   </div>
 </header>
 
 <main id="main">
-  <section class="hero" aria-labelledby="hero-heading">
-    <div class="wrap hero-layout">
-      <div class="hero-copy">
-        <p class="eyebrow light">The browser workflow documentation tool</p>
-        <h1 id="hero-heading">
-          <span>Your actions.</span>
-          <span>Your instructions.</span>
-          <span><em>Made simple.</em></span>
-        </h1>
-        <p class="hero-lead">Record what you do in your browser. Turn it into clear work instructions, employee training materials, SOPs, and software documentation—without writing every step from scratch.</p>
-        <div class="hero-links">
-          <a class="button button-yellow" href="https://chromewebstore.google.com/detail/hfdninhgfekgelahihnpicfgckiepjgm?utm_source=teachatlas_website&amp;utm_medium=referral&amp;utm_campaign=homepage_hero">Start for free <span aria-hidden="true">↗</span></a>
-          <a class="arrow-link" href="#why">See what it does <span aria-hidden="true">↗</span></a>
+  <section class="new-hero">
+    <div class="wrap new-hero-grid">
+      <div class="new-hero-copy">
+        <p class="new-kicker">Browser workflow documentation</p>
+        <h1 class="new-title"><span>Your actions.</span><span>Your instructions.</span><span>Made simple.</span></h1>
+        <p class="new-lead">TeachAtlas records supported browser actions and turns them into editable work instructions, SOPs and software training materials, with optional screenshots.</p>
+        <div class="new-actions">
+          <a class="new-button primary" href="https://chromewebstore.google.com/detail/hfdninhgfekgelahihnpicfgckiepjgm?utm_source=teachatlas_website&amp;utm_medium=referral&amp;utm_campaign=homepage_hero">Install Free ↗</a>
+          <a class="new-button secondary" href="https://buy.stripe.com/aFa9AV1mReOg6xP44S2wU00">Get Pro — $9/month ↗</a>
         </div>
-        <p class="hero-detail">For desktop Chrome, Firefox and Microsoft Edge. No credit card required. Some protected pages cannot be recorded.</p>
+        <p class="new-small">Desktop Chrome, Firefox and Edge. No card needed for Free. <a href="https://addons.mozilla.org/en-US/firefox/addon/teachatlas/">Firefox version</a>.</p>
       </div>
-      <div class="hero-art" role="img" aria-label="Interface-inspired illustration of editable browser work instructions beside TeachAtlas's blue recording sidebar. Not an actual product screenshot.">
-        <div class="art-window">
-          <div class="window-top"><i></i><i></i><i></i><span class="window-address">your work, documented</span></div>
-          <div class="art-body">
-            <div class="art-topline">
-              <div class="art-signature"><img src="teachatlas-store-icon.png" alt=""> TeachAtlas</div>
-              <span class="art-status">READY TO REVIEW</span>
-            </div>
-            <p class="art-kicker">Work instructions / Browser workflow</p>
-            <p class="art-title">Document a task without starting from a blank page.</p>
-            <div class="art-progress"></div>
-            <div class="art-instruction"><div class="art-thumb"></div><div><div class="art-line1"></div><div class="art-line2"></div></div></div>
-            <div class="art-instruction"><div class="art-thumb"></div><div><div class="art-line1"></div><div class="art-line2"></div></div></div>
-            <div class="art-instruction"><div class="art-thumb"></div><div><div class="art-line1"></div><div class="art-line2"></div></div></div>
-            <div class="art-footer"><span>Editable instructions • optional screenshots</span><span class="art-export">EXPORT ↗</span></div>
-          </div>
+      <div class="new-preview" role="img" aria-label="Illustration of an editable TeachAtlas work instruction with optional screenshots. Not a screenshot of the extension.">
+        <div class="new-preview-head"><strong>Teach<span>Atlas</span></strong><small>Record • Review • Export</small></div>
+        <div class="new-preview-body">
+          <div class="new-preview-line"><span>WORK INSTRUCTIONS</span><b>READY TO REVIEW</b></div>
+          <h2>A browser task, documented.</h2>
+          <div class="new-sample"><i aria-hidden="true"></i><p><strong>Open your workspace</strong><small>Recorded browser action</small></p></div>
+          <div class="new-sample"><i aria-hidden="true"></i><p><strong>Select the right option</strong><small>Optional screenshot included</small></p></div>
+          <div class="new-sample"><i aria-hidden="true"></i><p><strong>Review the result</strong><small>Editable step description</small></p></div>
+          <div class="new-preview-foot"><span>Editable instructions</span><b>EXPORT</b></div>
         </div>
-        <div class="sidebar-mockup" aria-hidden="true">
-          <div class="sidebar-mockup-head">
-            <strong>Teach<span>Atlas</span></strong>
-            <i></i>
-            <small lang="en">Record • Review • Export</small>
-          </div>
-          <div class="sidebar-mockup-body">
-            <div class="mock-status"><span class="status-dot"></span> Ready to document</div>
-            <div class="mock-section">RECORD BROWSER TASK</div>
-            <div class="mock-action">Start recording <span>●</span></div>
-            <div class="mock-divider"></div>
-            <div class="mock-section">REVIEW &amp; EXPORT</div>
-            <div class="mock-export">Your instructions ↗</div>
-          </div>
-        </div>
-        <p class="art-note">Interface-inspired illustration · Not a screenshot of the extension</p>
+        <p class="new-preview-note">Interface illustration, not an actual recording</p>
       </div>
     </div>
   </section>
 
-  <section class="chapter" id="why">
+  <section class="new-how" id="how">
     <div class="wrap">
-      <p class="chapter-label reveal">Built for the work behind the work</p>
-      <div class="large-statement">
-        <h2 class="reveal">Your knowledge shouldn't disappear when the tab closes.</h2>
-        <p class="section-intro reveal">A familiar process can be hard to explain from memory. TeachAtlas captures supported browser actions while you complete the task, creating instructions you can review, edit, and share in the format that works for you.</p>
+      <div class="new-intro"><div><p class="new-kicker">How it works</p><h2>Do the work. Keep the instructions.</h2></div><p>Instead of writing every click from memory, record a browser task, review the instructions and share a useful document.</p></div>
+      <div class="new-process">
+        <div><h3>Record</h3><p>Capture supported clicks and navigation, with optional screenshots.</p></div>
+        <div><h3>Review</h3><p>Edit the text and cover private details before sharing.</p></div>
+        <div><h3>Export or share</h3><p>Download a document or use Pro Cloud Share for a public link.</p></div>
       </div>
-      <div class="idea-grid">
-        <article class="idea reveal">
-          <span class="small-mark">CAPTURE</span>
-          <h3>Do the task.<br>Record the process.</h3>
-          <p>Capture supported clicks and navigation, with optional screenshots to illustrate the workflow.</p>
-        </article>
-        <article class="idea reveal">
-          <span class="small-mark">REFINE</span>
-          <h3>Make every instruction count.</h3>
-          <p>Correct the generated descriptions, organize your steps, and cover private details before sharing.</p>
-        </article>
-        <article class="idea reveal">
-          <span class="small-mark">DISTRIBUTE</span>
-          <h3>Put knowledge to work.</h3>
-          <p>Export as a document, or use Pro Cloud Share to publish a public link and manage access to the hosted copy.</p>
-        </article>
-      </div>
+      <p class="new-uses">For employee onboarding, work instructions, SOP documentation, IT support and software walkthroughs.</p>
     </div>
   </section>
 
-  <section class="use-cases" id="use-cases" aria-labelledby="cases-heading">
+  <section class="new-pricing" id="pricing">
     <div class="wrap">
-      <div class="use-head">
-        <div>
-          <p class="chapter-label reveal">One tool. Many useful purposes.</p>
-          <h2 id="cases-heading" class="reveal">Whatever you call it,<br>make it easy to follow.</h2>
-        </div>
-        <p class="reveal">Different teams use different words. The goal is the same: clear instructions that someone else can use.</p>
-      </div>
-      <div class="use-stage">
-        <div class="use-tabs" role="tablist" aria-label="Explore TeachAtlas use cases">
-          <button class="use-tab" role="tab" aria-selected="true" id="tab-onboarding" aria-controls="use-panel" data-use="onboarding">Employee onboarding</button>
-          <button class="use-tab" role="tab" aria-selected="false" id="tab-sops" aria-controls="use-panel" data-use="sops" tabindex="-1">Work instructions &amp; SOPs</button>
-          <button class="use-tab" role="tab" aria-selected="false" id="tab-support" aria-controls="use-panel" data-use="support" tabindex="-1">IT &amp; customer support</button>
-          <button class="use-tab" role="tab" aria-selected="false" id="tab-training" aria-controls="use-panel" data-use="training" tabindex="-1">Software walkthroughs</button>
-        </div>
-        <div class="use-panel" id="use-panel" role="tabpanel" aria-labelledby="tab-onboarding" tabindex="0">
-          <div class="use-panel-copy" aria-live="polite">
-            <span class="index" id="use-kicker">Train new teammates</span>
-            <h3 id="use-title">Show the process once. Help the next person learn it.</h3>
-            <p id="use-description">Turn common browser tasks into reusable employee training materials. New teammates can follow what you've documented instead of trying to remember every click.</p>
-          </div>
-          <div class="use-graphic" aria-hidden="true"><span id="use-symbol">↗</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="feature-band" id="features">
-    <div class="wrap">
-      <div class="feature-head reveal">
-        <p class="chapter-label">Designed to stay useful</p>
-        <h2>All the detail.<br>None of the unnecessary noise.</h2>
-        <p class="section-intro">A browser recorder for documentation, not screen video. Work in your browser, then turn the captured steps into something people can read and use.</p>
-      </div>
-      <div class="feature-list">
-        <div class="feature-row reveal"><div class="category">Recording</div><div class="feature-copy"><h3>Automatic browser task capture</h3><p>Record supported clicks and navigation under your control. Pause, resume, and review the resulting instructions.</p></div><div class="icon-arrow" aria-hidden="true">↗</div></div>
-        <div class="feature-row reveal"><div class="category">Visual clarity</div><div class="feature-copy"><h3>Screenshot-based procedures</h3><p>Use optional screenshots and visual click indicators where supported. Review and hide private details before exporting or publishing.</p></div><div class="icon-arrow" aria-hidden="true">↗</div></div>
-        <div class="feature-row reveal"><div class="category">Editing</div><div class="feature-copy"><h3>Instructions you can actually revise</h3><p>Refine step descriptions, edit content, and create manual instructions when the recording needs a human touch.</p></div><div class="icon-arrow" aria-hidden="true">↗</div></div>
-        <div class="feature-row reveal"><div class="category">Files</div><div class="feature-copy"><h3>Flexible export formats</h3><p>TXT and PDF exports are included in Free. Pro adds HTML, Word and Markdown exports, where supported by your browser version.</p></div><div class="icon-arrow" aria-hidden="true">↗</div></div>
-        <div class="feature-row reveal"><div class="category">Organization</div><div class="feature-copy"><h3>Multi-chapter training manuals</h3><p>Pro users can combine saved recordings into organized manuals, with features subject to browser storage and technical limitations.</p></div><div class="icon-arrow" aria-hidden="true">↗</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cloud" aria-labelledby="cloud-heading">
-    <div class="wrap cloud-layout">
-      <div class="reveal">
-        <p class="eyebrow light">Available with TeachAtlas Pro</p>
-        <h2 id="cloud-heading">Make a process available beyond your own browser.</h2>
-        <p>Cloud Share lets you intentionally publish selected instructions or multi-chapter manuals to a public link. Choose from the offered download formats, update the hosted content, or revoke the link when it is no longer needed.</p>
-        <p class="cloud-footnote">Anyone with the link can view the published content. Revoking a link cannot retrieve copies that others have already saved. Do not publish sensitive information.</p>
-      </div>
-      <div class="cloud-art reveal" aria-label="Illustration of a published TeachAtlas document link">
-        <div class="share-preview">
-          <div class="share-top"><span>TEACHATLAS / CLOUD SHARE</span><span>PUBLIC LINK ↗</span></div>
-          <h3>Instructions, ready to follow.</h3>
-          <p>Publish a reviewed copy of a procedure or training manual and send the link to the people who need it.</p>
-          <div class="share-link"><span>Shareable instructions</span><span class="share-chip">PUBLISHED</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
-    <div class="wrap">
-      <div class="pricing-head reveal">
-        <p class="chapter-label">Straightforward pricing</p>
-        <h2 id="pricing-heading">Start free. Expand when you need to.</h2>
-        <p class="section-intro" style="margin-inline:auto">Get useful documentation from the Free Version. Upgrade to Pro for longer recordings, more formats, organized manuals, and Cloud Share.</p>
-      </div>
-      <div class="pricing-grid">
-        <article class="plan">
-          <div class="plan-top"><h3>TeachAtlas Free</h3><span class="plan-label">Free version</span></div>
-          <div class="plan-price"><strong>$0</strong><span>/ forever</span></div>
-          <p class="plan-summary">Make your first browser work instructions without a subscription or credit card.</p>
+      <p class="new-kicker">Simple pricing</p>
+      <h2>Free to start. $9 to go Pro.</h2>
+      <div class="new-plans">
+        <article class="new-plan">
+          <h3>TeachAtlas Free</h3>
+          <p class="new-price">$0 <small>/ forever</small></p>
+          <p class="new-plan-lead">Document browser tasks without a subscription.</p>
           <ul>
-            <li>Record supported browser actions and optional screenshots</li>
-            <li>Save one set of instructions at a time: up to 40 steps and 20 screenshots per recording</li>
-            <li>Edit instructions, pause/resume, and manually capture screenshot steps</li>
-            <li>Export to TXT or PDF</li>
-            <li>Recording pauses when the 40-step Free limit is reached</li>
-            <li>No activation code required</li>
+            <li>One saved recording at a time: up to 40 steps and 20 screenshots</li>
+            <li>Edit instructions, pause/resume and manually capture screenshot steps</li>
+            <li>Export as TXT or PDF</li>
+            <li>No activation code or credit card required</li>
           </ul>
-          <a class="button button-blue" href="https://chromewebstore.google.com/detail/hfdninhgfekgelahihnpicfgckiepjgm?utm_source=teachatlas_website&amp;utm_medium=referral&amp;utm_campaign=homepage_pricing">Get the Free Version ↗</a>
+          <a class="new-button primary" href="https://chromewebstore.google.com/detail/hfdninhgfekgelahihnpicfgckiepjgm?utm_source=teachatlas_website&amp;utm_medium=referral&amp;utm_campaign=homepage_pricing">Install Free ↗</a>
+          <p class="new-note">Recording pauses at the 40-step Free limit.</p>
         </article>
-        <article class="plan plan-featured">
-          <div class="plan-top"><h3>TeachAtlas Pro</h3><span class="plan-label">More capability</span></div>
-          <div class="plan-price"><strong>$9</strong><span>USD / month</span></div>
-          <p class="plan-summary">For longer, more detailed documentation and easier sharing across teams.</p>
+        <article class="new-plan pro">
+          <h3>TeachAtlas Pro</h3>
+          <p class="new-price">$9 <small>USD / month</small></p>
+          <p class="new-plan-lead">More room for recording, manuals and sharing.</p>
           <ul>
-            <li>Everything in TeachAtlas Free</li>
-            <li>Unlimited saved recordings, steps and optional screenshots, subject to browser storage and technical limits</li>
-            <li>TXT, PDF, HTML, Word and Markdown exports, where supported</li>
-            <li>Manual instruction creation and backup/restore tools, where supported</li>
-            <li>Combine recordings into multi-chapter manuals</li>
-            <li>Cloud Share public links with offered download choices, updates and revocation</li>
+            <li>Unlimited saved recordings, steps and screenshots, subject to browser storage limits</li>
+            <li>TXT, PDF, HTML, Word and Markdown exports where supported</li>
+            <li>Manual creation, multi-chapter manuals and backup tools where supported</li>
+            <li>Cloud Share public links with download choices, updates and revocation</li>
           </ul>
-          <a class="button button-blue" href="https://buy.stripe.com/aFa9AV1mReOg6xP44S2wU00">Get TeachAtlas Pro ↗</a>
+          <a class="new-button primary" href="https://buy.stripe.com/aFa9AV1mReOg6xP44S2wU00">Get Pro — $9/month ↗</a>
+          <p class="new-note">Monthly Stripe subscription. Taxes may apply.</p>
         </article>
       </div>
-      <p class="pricing-foot">Pro is a monthly subscription through Stripe. Applicable taxes may be added. Features may vary by browser and installed release. Unlimited features remain subject to technical storage limits. Cloud Share publishes public—not private—links.</p>
+      <p class="new-fine">Available features may differ by browser and installed release. Cloud Share links are public, not private.</p>
     </div>
   </section>
 
-  <section class="resources" aria-labelledby="resources-heading">
-    <div class="wrap">
-      <div class="resource-head reveal">
-        <div><p class="chapter-label">Learn more</p><h2 id="resources-heading">Useful resources.<br>No extra noise.</h2></div>
-        <a class="arrow-link" href="support.html">Visit support ↗</a>
-      </div>
-      <div class="resource-links">
-        <a href="sop-template.html"><small>Free download</small><h3>SOP template</h3><p>Start a standard operating procedure with an editable Word file or printable PDF.</p><span class="resource-arrow" aria-hidden="true">↗</span></a>
-        <a href="process-documentation-software.html"><small>Learning resource</small><h3>Process documentation software</h3><p>Understand recording tools, documentation workflows and where they fit.</p><span class="resource-arrow" aria-hidden="true">↗</span></a>
-        <a href="guide-creator-alternatives.html"><small>Compare tools</small><h3>TeachAtlas, Scribe and Tango</h3><p>Compare browser documentation approaches and choose what suits your work.</p><span class="resource-arrow" aria-hidden="true">↗</span></a>
-      </div>
-    </div>
+  <section class="new-share">
+    <div class="wrap new-share-grid"><h2>Built to share what you know.</h2><div><p>Pro Cloud Share lets you publish reviewed instructions or manuals to a public link that anyone can view without TeachAtlas. You can update or revoke the hosted copy.</p><small>Review private information before publishing. Revoking a link cannot retrieve copies others have saved.</small></div></div>
   </section>
 
-  <section class="faq" id="faq" aria-labelledby="faq-heading">
-    <div class="wrap faq-layout">
-      <div class="reveal">
-        <p class="chapter-label">Good to know</p><h2 id="faq-heading">A few practical answers.</h2>
-      </div>
-      <div class="faq-list">
-        <details><summary>What does TeachAtlas actually record?</summary><p>TeachAtlas records supported browser clicks and navigation after you start recording. Optional screenshots can add visual context. It is not a continuous video or unrestricted browsing-history recorder, and browser-protected pages may be unavailable.</p></details>
-        <details><summary>Is TeachAtlas free to use?</summary><p>Yes. The Free Version lets you save one recording at a time, with up to 40 steps and 20 screenshots per recording, and export as TXT or PDF. Pro is optional and costs $9 USD/month plus applicable taxes.</p></details>
-        <details><summary>Can I share instructions without installing TeachAtlas?</summary><p>Pro users can intentionally publish reviewed instructions or manuals through Cloud Share. Anyone who has the public link can view them without a TeachAtlas account. These links are not private and can be forwarded.</p></details>
-        <details><summary>Where are my recordings stored?</summary><p>Ordinary saved recordings and screenshots are kept locally in your browser. They do not automatically synchronize across browsers. Public Cloud Share copies are hosted separately, only when intentionally published.</p></details>
-        <details><summary>Can I use it on any webpage?</summary><p>No. Browser-internal and protected webpages, website permissions, or technical restrictions can prevent some actions and screenshot captures. Features also vary by browser version.</p></details>
-        <details><summary>Can I cancel Pro?</summary><p>Yes. Manage or cancel your subscription through the <a href="https://billing.stripe.com/p/login/aFa9AV1mReOg6xP44S2wU00">Stripe billing portal</a>. Uninstalling the extension does not cancel recurring billing. See the <a href="index.html#billing">subscription terms</a> for details.</p></details>
-      </div>
-    </div>
+  <section class="new-resources">
+    <div class="wrap new-resources-grid"><div><p class="new-kicker">More when you need it</p><h2>Helpful resources</h2></div><div class="new-real-links">
+      <a href="sop-template.html">Free SOP template ↗</a>
+      <a href="process-documentation-software.html">Process documentation software ↗</a>
+      <a href="guide-creator-alternatives.html">Compare TeachAtlas, Scribe and Tango ↗</a>
+      <a href="support.html">Support Center ↗</a>
+    </div></div>
   </section>
 
-  <section class="endcap">
-    <div class="wrap endcap-layout">
-      <div class="reveal">
-        <p class="chapter-label">TeachAtlas</p>
-        <h2>Turn what you know into something people can use.</h2>
-        <p>Capture a process, make the instructions your own, and pass the knowledge along.</p>
-      </div>
-      <a class="button button-blue" href="https://chromewebstore.google.com/detail/hfdninhgfekgelahihnpicfgckiepjgm?utm_source=teachatlas_website&amp;utm_medium=referral&amp;utm_campaign=homepage_footer">Install for free ↗</a>
-    </div>
+  <section class="new-faq" id="faq">
+    <div class="wrap new-faq-grid"><div><p class="new-kicker">Good to know</p><h2>Common questions</h2></div><div>
+      <details><summary>Can TeachAtlas record every website?</summary><p>No. You control when recording starts. Protected pages, permissions and technical restrictions can prevent recording or screenshot capture.</p></details>
+      <details><summary>Where are my instructions stored?</summary><p>Saved instructions and screenshots normally stay locally in your browser. They do not automatically sync across browsers. Pro Cloud Share is an optional publishing action.</p></details>
+      <details><summary>Can I cancel Pro?</summary><p>Yes, using the <a href="https://billing.stripe.com/p/login/aFa9AV1mReOg6xP44S2wU00">Stripe billing portal</a>. Uninstalling the extension does not cancel your subscription. See the <a href="index.html#billing">billing terms</a>.</p></details>
+    </div></div>
   </section>
 </main>
+
 
 <footer>
   <div class="wrap">
@@ -704,7 +680,7 @@
         <p>Turn what you do into a guide anyone can follow.</p>
       </div>
       <nav class="footer-links" aria-label="Footer links">
-        <a href="home.html">Home</a><a href="#why">Why TeachAtlas</a><a href="#features">Features</a><a href="#pricing">Pricing</a>
+        <a href="home.html">Home</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">Questions</a>
         <a href="https://addons.mozilla.org/en-US/firefox/addon/teachatlas/">Firefox Add-ons</a>
         <a href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home">Microsoft Edge Add-ons</a>
         <a href="support.html">Support Center</a><a href="sop-template.html">Free SOP Template</a>
