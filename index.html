@@ -51,8 +51,7 @@
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
   </style>
 <script>try{if(localStorage.getItem("ta_site_dark_mode")==="dark")document.documentElement.setAttribute("data-ta-theme","dark")}catch(_){}</script>
-<script src="teachatlas-theme.js" defer></script>
-<link rel="stylesheet" href="teachatlas-site-header.css">
+<link rel="stylesheet" href="teachatlas-site-header.css?v=20261122b">
 </head>
 <body>
 <a class="ta-site-skip" href="#main">Skip to content</a>
@@ -91,6 +90,35 @@
     </button>
   </div>
 </div>
+<script>
+(function () {
+  "use strict";
+  var root = document.documentElement;
+  var toggle = document.getElementById("ta-theme-toggle");
+  if (!toggle) return;
+
+  function render(dark) {
+    if (dark) root.setAttribute("data-ta-theme", "dark");
+    else root.removeAttribute("data-ta-theme");
+    toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+    var title = dark ? "Switch to light mode" : "Switch to dark mode";
+    toggle.setAttribute("aria-label", title);
+    toggle.setAttribute("title", title);
+  }
+
+  render(root.getAttribute("data-ta-theme") === "dark");
+
+  toggle.addEventListener("click", function () {
+    var dark = root.getAttribute("data-ta-theme") !== "dark";
+    render(dark);
+    try { localStorage.setItem("ta_site_dark_mode", dark ? "dark" : "light"); } catch (err) {}
+  });
+
+  window.addEventListener("storage", function (event) {
+    if (event.key === "ta_site_dark_mode") render(event.newValue === "dark");
+  });
+}());
+</script>
 <div class="wrap" style="padding:29px 0 4px">
   <h1 style="margin:0 0 6px;font-size:clamp(1.9rem,4vw,2.6rem);line-height:1.2;color:#122c52">Privacy, Terms &amp; Billing</h1>
   <p style="margin:0;color:#4d6177">TeachAtlas policies and subscription information.</p>
