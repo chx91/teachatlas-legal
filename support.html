@@ -83,6 +83,8 @@
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
+<script>try{if(localStorage.getItem("ta_site_dark_mode")==="dark")document.documentElement.setAttribute("data-ta-theme","dark")}catch(_){}</script>
+<script src="teachatlas-theme.js" defer></script>
 <link rel="stylesheet" href="teachatlas-site-header.css">
 </head>
 <body>
@@ -117,6 +119,9 @@
         <a href="index.html#privacy">Privacy &amp; Terms</a>
       </nav>
     </details>
+    <button type="button" class="ta-site-theme-toggle" id="ta-theme-toggle" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+      <span class="ta-site-moon" aria-hidden="true">☾</span><span class="ta-site-sun" aria-hidden="true">☀</span>
+    </button>
   </div>
 </div>
 <main id="main" class="wrap">
