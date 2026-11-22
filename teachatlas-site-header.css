@@ -123,3 +123,144 @@
   .ta-site-bar .ta-site-install{margin-left:auto!important}
 }
 @media(prefers-reduced-motion:reduce){.ta-site-bar{scroll-behavior:auto}}
+
+
+
+/* Shared theme switch: immediately follows Menu on phones; rightmost on desktop. */
+.ta-site-theme-toggle{
+  order:5;display:inline-flex;align-items:center;justify-content:center;flex:0 0 39px;
+  width:39px;height:38px;min-width:39px;padding:0;margin:0;
+  border:1px solid #c4d9f1;border-radius:6px;background:#fff;
+  color:#0a458f;cursor:pointer;line-height:1;
+}
+.ta-site-theme-toggle:hover{background:#e8f3ff}
+.ta-site-theme-toggle:focus-visible{outline:3px solid #dca900;outline-offset:3px}
+.ta-site-theme-toggle .ta-site-moon{font-size:24px;line-height:1}
+.ta-site-theme-toggle .ta-site-sun{display:none;font-size:21px;line-height:1}
+html[data-ta-theme="dark"] .ta-site-theme-toggle .ta-site-moon{display:none}
+html[data-ta-theme="dark"] .ta-site-theme-toggle .ta-site-sun{display:inline}
+@media(max-width:420px){
+  .ta-site-bar .ta-site-home span{display:none}
+  .ta-site-bar .ta-site-home img{width:34px;height:34px}
+  .ta-site-container{gap:7px}
+  .ta-site-theme-toggle{flex-basis:37px;min-width:37px;width:37px;height:36px}
+}
+
+/* Site-wide dark palette. The blue/yellow TeachAtlas banner remains unchanged. */
+html[data-ta-theme="dark"]{
+  color-scheme:dark;
+  --ink:#f0f6ff;--sub:#c1d1e7;--text:#c1d1e7;--muted:#c1d1e7;
+  --navy:#f0f6ff;--paper:#0d192b;--bg:#0d192b;--cream:#0d192b;
+  --mist:#172a43;--pale:#182c45;--white:#162a43;--line:#334b68;--edge:#334b68;
+}
+html[data-ta-theme="dark"] body{background:#0d192b!important;color:#eef5ff!important}
+html[data-ta-theme="dark"] main{background-color:#0d192b;color:#eef5ff}
+html[data-ta-theme="dark"] main > section:not(.cta):not(.cloud):not(.new-share):not(.sharing):not(.endcap),
+html[data-ta-theme="dark"] main > .hero,
+html[data-ta-theme="dark"] main :is(.section.white,.section.mist,.white,.mist,.new-how,.new-resources,.new-faq,.new-pricing,.new-hero,.resources,.pricing,.faq,.use-cases,.feature-band){
+  background:#101e32!important;color:#edf5ff!important;
+}
+html[data-ta-theme="dark"] main > section.new-hero,
+html[data-ta-theme="dark"] main > section.hero,
+html[data-ta-theme="dark"] main > .hero{
+  background:linear-gradient(116deg,#12213a,#132e50)!important;
+}
+html[data-ta-theme="dark"] main > section.new-pricing{background:#152640!important}
+html[data-ta-theme="dark"] main :is(
+  .new-plans,.new-plan,.new-plan.pro,.new-preview-body,.new-process,.new-button.secondary,
+  .card,.card.featured,.panel,.preview,.preview-step,.competitor,.feature,.fit,
+  .how-card,.price,.anchor-pills a,.table-wrap,.steps li,pre.template,
+  .note,.summary,.plan,.plan.pro,.two-plans .plan,.section,.data-table th,.data-table td,
+  .store-links a,.btn.outline,.btn.ghost,.share-preview,.art-window,#result,#token,
+  .faq-list,.new-faq details,.new-sample i,.matrix td,.matrix tr:nth-child(even) td
+){
+  background-color:#192e49!important;color:#eef5ff!important;
+  border-color:#385270!important;box-shadow:none!important;
+}
+html[data-ta-theme="dark"] main :is(.new-plan.pro,.plan.pro){background-color:#1b3451!important}
+html[data-ta-theme="dark"] main :is(.new-plans,.new-process,.new-faq details,.data-table,.matrix td,.new-sample,.feature-row,.idea-grid,.new-sample i){
+  border-color:#385270!important;
+}
+html[data-ta-theme="dark"] main :is(h1,h2,h3,h4,summary,.new-price,.price .amount){
+  color:#f0f6ff!important;
+}
+html[data-ta-theme="dark"] main :is(p,li,small,td,.section-intro,.lead,.subtle,.kind,.sources,.new-uses,.new-note,.new-fine,.new-plan-lead,.new-lead,.new-intro>p){
+  color:#c2d3e9!important;
+}
+html[data-ta-theme="dark"] main :is(.new-title span:last-child,h1 em,.kicker,.new-kicker,.eyebrow,.chapter-label,.plan-label,.card .tag,.tag){
+  color:#8ec4ff!important;
+}
+html[data-ta-theme="dark"] main a:not(.new-button):not(.btn):not(.button):not(.primary-link):not(.nav-cta){
+  color:#9bcfff!important;
+}
+html[data-ta-theme="dark"] main :is(.new-button.primary,.btn.primary,.primary-link,.button-blue){
+  color:white!important;background-color:#145fbe!important;
+}
+html[data-ta-theme="dark"] main :is(.new-button.secondary,.btn.outline,.btn.ghost){
+  color:#eef5ff!important;background-color:#1c3857!important;border-color:#54789b!important;
+}
+html[data-ta-theme="dark"] main :is(.new-preview-head,.preview-bottom,.new-preview-foot b,.preview-step b,.how-num,.art-export){
+  color:#fff!important;
+}
+html[data-ta-theme="dark"] main :is(.new-preview-line b,.preview-top span,.pill){
+  background:#274a66!important;color:#eaf7ff!important;
+}
+html[data-ta-theme="dark"] main :is(.new-sample strong,.preview-step span,.new-preview-body h2,.preview-top strong){
+  color:#f2f7ff!important;
+}
+html[data-ta-theme="dark"] main :is(.new-share,.cloud,.sharing,.cta){
+  background:linear-gradient(120deg,#07386f,#0b54a6)!important;color:#fff!important;
+}
+html[data-ta-theme="dark"] main :is(.new-share,.cloud,.sharing,.cta) :is(h2,p,small,.lead){
+  color:#e7f2ff!important;
+}
+html[data-ta-theme="dark"] main .cta .btn{
+  background:#eaf4ff!important;color:#07376f!important;
+}
+html[data-ta-theme="dark"] main :is(.matrix th,.data-table th,thead){
+  background-color:#154579!important;color:#fff!important;
+}
+html[data-ta-theme="dark"] main .matrix th:nth-child(2){background-color:#1559b7!important}
+html[data-ta-theme="dark"] main :is(.price,.fit,.preview-label,.note,.sources){
+  color:#c7d9f0!important;
+}
+html[data-ta-theme="dark"] :is(.ta-site-bar,.site-nav){
+  background:#0e2138!important;border-color:#324e6d!important;
+}
+html[data-ta-theme="dark"] .ta-site-bar .ta-site-home{color:#eef6ff!important}
+html[data-ta-theme="dark"] .ta-site-bar .ta-site-desktop-nav a{color:#dbe9ff!important}
+html[data-ta-theme="dark"] .ta-site-bar .ta-site-desktop-nav a:hover{color:#95c9ff!important}
+html[data-ta-theme="dark"] .ta-site-bar .ta-site-mobile-menu>summary,
+html[data-ta-theme="dark"] .ta-site-theme-toggle{
+  background:#1b3655!important;border-color:#486b91!important;color:#f0f7ff!important;
+}
+html[data-ta-theme="dark"] .ta-site-theme-toggle:hover{background:#27466a!important}
+html[data-ta-theme="dark"] .ta-site-bar .ta-site-mobile-links{
+  background:#102440!important;border-color:#365575!important;
+}
+html[data-ta-theme="dark"] .ta-site-bar .ta-site-mobile-links a{color:#ecf4ff!important}
+html[data-ta-theme="dark"] .ta-site-bar .ta-site-mobile-links a:hover{color:#9ccfff!important}
+html[data-ta-theme="dark"] .ta-site-bar .ta-site-install{background:#176bd0!important;color:white!important}
+html[data-ta-theme="dark"] :is(.new-hero,.hero) .new-preview-note{color:#afc7e5!important}
+/* Legal headings and navigation may have inline light-theme colors. */
+html[data-ta-theme="dark"] body > .wrap > h1,
+html[data-ta-theme="dark"] body > .wrap > p{color:#f0f6ff!important}
+html[data-ta-theme="dark"] nav[aria-label="Legal information navigation"] a{
+  background:#192e49!important;border-color:#3b5672!important;color:#a8d1ff!important;
+}
+html[data-ta-theme="dark"] footer{background:#07152a!important;color:#d2e2f7!important}
+html[data-ta-theme="dark"] footer a{color:#b6d8ff!important}
+html[data-ta-theme="dark"] #status{color:#d6e9ff!important}
+html[data-ta-theme="dark"] button:not(.ta-site-theme-toggle):not(.menu-button):not(.new-button){
+  border-color:#54789b;
+}
+/* Preserve legible printed/legal documents, regardless of the screen theme. */
+@media print{
+  html[data-ta-theme="dark"]{color-scheme:light}
+  html[data-ta-theme="dark"] body,html[data-ta-theme="dark"] main,
+  html[data-ta-theme="dark"] main > section,html[data-ta-theme="dark"] main .section{
+    background:#fff!important;color:#000!important;
+  }
+  html[data-ta-theme="dark"] main :is(h1,h2,h3,p,li,td){color:#000!important}
+  .ta-site-theme-toggle{display:none!important}
+}
