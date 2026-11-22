@@ -4,8 +4,7 @@
 <title>Process Documentation Software & SOP Creators | TeachAtlas</title><meta name="description" content="Compare types of process documentation software, SOP creators and browser workflow recorders. Learn what to document, how to evaluate features, and when TeachAtlas fits."><link rel="canonical" href="https://chx91.github.io/teachatlas-legal/process-documentation-software.html"><link rel="icon" href="teachatlas-store-icon.png" type="image/png">
 <meta property="og:type" content="article"><meta property="og:site_name" content="TeachAtlas"><meta property="og:title" content="Process Documentation Software & SOP Creators | TeachAtlas"><meta property="og:description" content="Compare types of process documentation software, SOP creators and browser workflow recorders. Learn what to document, how to evaluate features, and when TeachAtlas fits."><meta property="og:url" content="https://chx91.github.io/teachatlas-legal/process-documentation-software.html"><meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="resources.css"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Process Documentation Software & SOP Creators | TeachAtlas","description":"Compare types of process documentation software, SOP creators and browser workflow recorders. Learn what to document, how to evaluate features, and when TeachAtlas fits.","url":"https://chx91.github.io/teachatlas-legal/process-documentation-software.html","isPartOf":{"@type":"WebSite","name":"TeachAtlas","url":"https://chx91.github.io/teachatlas-legal/home.html"},"datePublished":"2026-11-17","dateModified":"2026-11-21"}</script><script>try{if(localStorage.getItem("ta_site_dark_mode")==="dark")document.documentElement.setAttribute("data-ta-theme","dark")}catch(_){}</script>
-<script src="teachatlas-theme.js" defer></script>
-<link rel="stylesheet" href="teachatlas-site-header.css">
+<link rel="stylesheet" href="teachatlas-site-header.css?v=20261122b">
 </head><body>
 <a class="ta-site-skip" href="#main">Skip to content</a>
 <div class="ta-site-banner" role="banner">
@@ -43,6 +42,35 @@
     </button>
   </div>
 </div>
+<script>
+(function () {
+  "use strict";
+  var root = document.documentElement;
+  var toggle = document.getElementById("ta-theme-toggle");
+  if (!toggle) return;
+
+  function render(dark) {
+    if (dark) root.setAttribute("data-ta-theme", "dark");
+    else root.removeAttribute("data-ta-theme");
+    toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+    var title = dark ? "Switch to light mode" : "Switch to dark mode";
+    toggle.setAttribute("aria-label", title);
+    toggle.setAttribute("title", title);
+  }
+
+  render(root.getAttribute("data-ta-theme") === "dark");
+
+  toggle.addEventListener("click", function () {
+    var dark = root.getAttribute("data-ta-theme") !== "dark";
+    render(dark);
+    try { localStorage.setItem("ta_site_dark_mode", dark ? "dark" : "light"); } catch (err) {}
+  });
+
+  window.addEventListener("storage", function (event) {
+    if (event.key === "ta_site_dark_mode") render(event.newValue === "dark");
+  });
+}());
+</script>
 <main id="main"><section class="hero"><div class="wrap"><span class="eyebrow">Software selection guide</span><h1>Process documentation software.<br><em>Find the right type.</em></h1><p class="lead">Not every process needs a complex documentation platform. Use this buying and evaluation guide to compare templates, browser recorders, SOP software and interactive training tools.</p></div></section>
 <section class="section white"><div class="wrap"><span class="eyebrow">Understand the category</span><h2>What does process documentation software do?</h2><p class="narrow">It helps people capture, standardize, update and distribute instructions for repeatable work. Depending on the tool, output may be a written procedure, numbered screenshots, a video, an interactive walkthrough or a central knowledge base.</p><div class="cards3"><article class="card"><span class="tag">01 / Templates</span><h3>Document editors and templates</h3><p>Best for drafting policies, ownership, approval workflows and written SOPs. Manual upkeep and screenshot creation remain your responsibility.</p><a href="sop-template.html"><strong>Free SOP template</strong></a></article><article class="card featured"><span class="tag">02 / Recorders</span><h3>Browser workflow recorders</h3><p>Best when someone needs a precise record of the steps taken inside a browser. Outputs can include editable text and illustrative captures.</p><a href="step-by-step-guide-creator.html"><strong>How recorded guides work</strong></a></article><article class="card"><span class="tag">03 / Platforms</span><h3>Training and knowledge platforms</h3><p>Best for multi-team publishing, advanced permissions, interactive tours, multimedia training and more complex governance.</p><a href="guide-creator-alternatives.html"><strong>Compare guide tools</strong></a></article></div></div></section>
 <section class="section mist"><div class="wrap"><span class="eyebrow">Selection checklist</span><h2>Six questions before you choose an SOP creator</h2><ol class="steps">
