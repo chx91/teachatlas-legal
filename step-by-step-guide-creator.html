@@ -4,8 +4,7 @@
 <title>Free Step-by-Step Guide Creator for Browser Tasks | TeachAtlas</title><meta name="description" content="Create editable step-by-step instructions from supported browser actions, with optional screenshots and file exports. Learn when to use a guide recorder versus manual documentation."><link rel="canonical" href="https://chx91.github.io/teachatlas-legal/step-by-step-guide-creator.html"><link rel="icon" href="teachatlas-store-icon.png" type="image/png">
 <meta property="og:type" content="article"><meta property="og:site_name" content="TeachAtlas"><meta property="og:title" content="Free Step-by-Step Guide Creator for Browser Tasks | TeachAtlas"><meta property="og:description" content="Create editable step-by-step instructions from supported browser actions, with optional screenshots and file exports. Learn when to use a guide recorder versus manual documentation."><meta property="og:url" content="https://chx91.github.io/teachatlas-legal/step-by-step-guide-creator.html"><meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="resources.css"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Free Step-by-Step Guide Creator for Browser Tasks | TeachAtlas","description":"Create editable step-by-step instructions from supported browser actions, with optional screenshots and file exports. Learn when to use a guide recorder versus manual documentation.","url":"https://chx91.github.io/teachatlas-legal/step-by-step-guide-creator.html","isPartOf":{"@type":"WebSite","name":"TeachAtlas","url":"https://chx91.github.io/teachatlas-legal/home.html"},"datePublished":"2026-11-17","dateModified":"2026-11-21"}</script><script>try{if(localStorage.getItem("ta_site_dark_mode")==="dark")document.documentElement.setAttribute("data-ta-theme","dark")}catch(_){}</script>
-<script src="teachatlas-theme.js" defer></script>
-<link rel="stylesheet" href="teachatlas-site-header.css">
+<link rel="stylesheet" href="teachatlas-site-header.css?v=20261122b">
 </head><body>
 <a class="ta-site-skip" href="#main">Skip to content</a>
 <div class="ta-site-banner" role="banner">
@@ -43,6 +42,35 @@
     </button>
   </div>
 </div>
+<script>
+(function () {
+  "use strict";
+  var root = document.documentElement;
+  var toggle = document.getElementById("ta-theme-toggle");
+  if (!toggle) return;
+
+  function render(dark) {
+    if (dark) root.setAttribute("data-ta-theme", "dark");
+    else root.removeAttribute("data-ta-theme");
+    toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+    var title = dark ? "Switch to light mode" : "Switch to dark mode";
+    toggle.setAttribute("aria-label", title);
+    toggle.setAttribute("title", title);
+  }
+
+  render(root.getAttribute("data-ta-theme") === "dark");
+
+  toggle.addEventListener("click", function () {
+    var dark = root.getAttribute("data-ta-theme") !== "dark";
+    render(dark);
+    try { localStorage.setItem("ta_site_dark_mode", dark ? "dark" : "light"); } catch (err) {}
+  });
+
+  window.addEventListener("storage", function (event) {
+    if (event.key === "ta_site_dark_mode") render(event.newValue === "dark");
+  });
+}());
+</script>
 <main id="main"><section class="hero"><div class="wrap"><span class="eyebrow">Browser workflow documentation</span><h1>Create step-by-step guides.<br><em>Record the process once.</em></h1><p class="lead">A practical tutorial for turning a repeatable browser task into clear instructions, with optional screenshots, editing and exports. Includes a worked example and free options.</p></div></section>
 <section class="section white"><div class="wrap"><span class="eyebrow">How it works</span><h2>From browser actions to an illustrated procedure</h2><ol class="steps">
 <li><strong>Choose a short, repeatable browser task.</strong><p>Pick a supported workflow with a clear start and finish, such as entering a request or preparing a weekly report. Avoid real confidential information during examples.</p></li>
