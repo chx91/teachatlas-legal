@@ -264,3 +264,12 @@ html[data-ta-theme="dark"] button:not(.ta-site-theme-toggle):not(.menu-button):n
   html[data-ta-theme="dark"] main :is(h1,h2,h3,p,li,td){color:#000!important}
   .ta-site-theme-toggle{display:none!important}
 }
+
+/* Resource accordions: keep FAQ cards and text high contrast in dark mode. */
+html[data-ta-theme="dark"] main .section details{
+  background:#192e49!important;
+  border-color:#385270!important;
+  color:#f0f6ff!important;
+}
+html[data-ta-theme="dark"] main .section details > summary{color:#f0f6ff!important}
+html[data-ta-theme="dark"] main .section details > p{color:#c2d3e9!important}
