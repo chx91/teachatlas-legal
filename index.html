@@ -50,14 +50,46 @@
     @media (max-width:650px) { .data-table, .data-table tbody, .data-table tr, .data-table th, .data-table td { display:block; } .data-table thead { display:none; } .data-table tr { margin:12px 0; border:1px solid var(--line); border-radius:8px; overflow:hidden; } .data-table th,.data-table td { border:0; } .data-table td:before { content:attr(data-label); display:block; font-weight:700; color:var(--navy); } }
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
   </style>
+<link rel="stylesheet" href="teachatlas-site-header.css">
 </head>
 <body>
-<header class="hero">
-  <div class="wrap">
-    <h1>TeachAtlas</h1>
-    <p>Privacy, Terms of Use &amp; Subscription Information</p>
+<a class="ta-site-skip" href="#main">Skip to content</a>
+<div class="ta-site-banner" role="banner">
+  <div class="ta-site-banner-inner">
+    <a class="ta-site-wordmark" href="home.html" aria-label="TeachAtlas homepage">Teach<span>Atlas</span></a>
+    <span class="ta-site-swoosh" aria-hidden="true"></span>
+    <p class="ta-site-tagline" lang="en">Record • Review • Export</p>
   </div>
-</header>
+</div>
+<div class="ta-site-bar">
+  <div class="ta-site-container">
+    <a class="ta-site-home" href="home.html" aria-label="TeachAtlas homepage">
+      <img src="teachatlas-store-icon.png" alt="" width="34" height="34">
+      <span>TeachAtlas</span>
+    </a>
+    <nav class="ta-site-desktop-nav" aria-label="Main navigation">
+      <a href="home.html">Home</a>
+      <a href="home.html#how">How it works</a>
+      <a href="home.html#pricing">Pricing</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <a class="ta-site-install" href="https://chromewebstore.google.com/detail/hfdninhgfekgelahihnpicfgckiepjgm?utm_source=teachatlas_website&amp;utm_medium=referral&amp;utm_campaign=global_header">Install Free</a>
+    <details class="ta-site-mobile-menu">
+      <summary aria-label="Open website menu"><span class="ta-site-bars" aria-hidden="true">☰</span> Menu</summary>
+      <nav class="ta-site-mobile-links" aria-label="Mobile navigation">
+        <a href="home.html">Home</a>
+        <a href="home.html#how">How it works</a>
+        <a href="home.html#pricing">Pricing</a>
+        <a href="support.html">Support</a>
+        <a href="index.html#privacy">Privacy &amp; Terms</a>
+      </nav>
+    </details>
+  </div>
+</div>
+<div class="wrap" style="padding:29px 0 4px">
+  <h1 style="margin:0 0 6px;font-size:clamp(1.9rem,4vw,2.6rem);line-height:1.2;color:#122c52">Privacy, Terms &amp; Billing</h1>
+  <p style="margin:0;color:#4d6177">TeachAtlas policies and subscription information.</p>
+</div>
 <div class="wrap">
   <nav aria-label="Legal information navigation">
     <a href="#privacy">Privacy Policy</a>
@@ -67,7 +99,7 @@
     <a href="support.html">Support Center</a>
     <a href="home.html">Homepage</a>
   </nav>
-  <main>
+  <main id="main">
     <p class="intro"><strong>Last updated:</strong> November 21, 2026. TeachAtlas is a browser extension for recording supported browser actions and converting them into editable, shareable instructions. This policy covers supported versions of TeachAtlas for Google Chrome, Mozilla Firefox, and Microsoft Edge, together with its licensing and activation services, optional sharing service, and related TeachAtlas web pages. Features and permission prompts may differ between browsers and versions.</p>
     <section id="privacy" class="section" aria-labelledby="privacy-title">
       <h2 id="privacy-title">Privacy Policy</h2>
