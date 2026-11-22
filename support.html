@@ -85,6 +85,74 @@
   </style>
 <script>try{if(localStorage.getItem("ta_site_dark_mode")==="dark")document.documentElement.setAttribute("data-ta-theme","dark")}catch(_){}</script>
 <link rel="stylesheet" href="teachatlas-site-header.css?v=20261122c">
+
+<style id="ta-support-cards">
+  /* Rounded support sections: scoped so shared navigation stays unchanged. */
+  main#main{padding-bottom:34px}
+  main#main > .support-hero{
+    margin:26px 0 18px;padding:29px 30px 31px;
+    border:1px solid #d7e5f5;border-radius:20px;
+    background:linear-gradient(130deg,#f7fbff,#eaf3ff);
+  }
+  main#main > section.support-card{
+    margin:16px 0 0;padding:26px 29px 25px;
+    border:1px solid #d8e4f2;border-radius:18px;
+    background:#f7faff;
+    box-shadow:0 5px 19px rgba(9,48,98,.045);
+  }
+  main#main > section.support-card > h2{margin:0 0 17px}
+  main#main .store-links a{border-radius:11px}
+  main#main .plan{border-radius:14px;padding:19px 21px}
+  main#main .primary-link{border-radius:10px}
+  main#main .steps{display:grid;gap:12px;margin:15px 0}
+  main#main .steps li{
+    display:grid;grid-template-columns:34px minmax(0,1fr);
+    align-items:start;gap:13px;padding:16px 18px;
+    border:1px solid #d8e4f2;border-radius:13px;
+    background:#fff;color:#304c6f;line-height:1.7;
+  }
+  main#main .steps li::before{
+    content:counter(instruction);display:grid;place-items:center;
+    width:32px;height:32px;border-radius:9px;
+    background:#e5f0ff;color:#0754b1;font-weight:850;
+  }
+  main#main .steps .step-copy{grid-column:2;min-width:0;overflow-wrap:break-word}
+  main#main .steps .step-copy strong{display:inline;white-space:normal}
+  main#main .q-list{border:0;display:grid;gap:11px;margin-top:14px}
+  main#main .q-list details{
+    background:#fff;border:1px solid #d8e4f2;border-radius:13px;
+    padding:15px 18px;margin:0;
+  }
+  main#main .q-list details summary{color:#142f58}
+  main#main .q-list details p{margin-top:11px}
+  html[data-ta-theme="dark"] main#main > .support-hero{
+    background:linear-gradient(130deg,#142841,#1a3554)!important;
+    border-color:#365575!important;color:#eef5ff!important;
+  }
+  html[data-ta-theme="dark"] main#main > section.support-card{
+    background:#152840!important;border-color:#355272!important;
+    box-shadow:0 7px 20px rgba(0,0,0,.11)!important;
+    color:#eef5ff!important;
+  }
+  html[data-ta-theme="dark"] main#main .steps li,
+  html[data-ta-theme="dark"] main#main .q-list details{
+    background:#1c3655!important;border-color:#3b5979!important;
+    color:#e9f3ff!important;
+  }
+  html[data-ta-theme="dark"] main#main .steps li::before{
+    background:#284e7b!important;color:#f0f7ff!important;
+  }
+  html[data-ta-theme="dark"] main#main .steps .step-copy,
+  html[data-ta-theme="dark"] main#main .q-list summary{color:#edf5ff!important}
+  html[data-ta-theme="dark"] main#main .q-list details p{color:#c2d3e9!important}
+  @media(max-width:580px){
+    main#main > .support-hero{padding:25px 20px;margin-top:16px;border-radius:16px}
+    main#main > section.support-card{padding:21px 18px;margin-top:13px;border-radius:15px}
+    main#main .steps li{gap:10px;padding:14px 12px}
+    main#main .plan{padding:16px}
+    main#main .q-list details{padding:13px 15px}
+  }
+</style>
 </head>
 <body>
 <a class="ta-site-skip" href="#main">Skip to content</a>
@@ -153,14 +221,14 @@
 }());
 </script>
 <main id="main" class="wrap">
-  <div class="hero">
+  <div class="hero support-hero">
     <p class="eyebrow">Help without the hassle</p>
     <h1>Support Center</h1>
     <p class="intro">Quick help for installing, recording, exporting and using TeachAtlas Pro.</p>
     <span class="version">Updated for 2.5.18</span>
   </div>
 
-  <section id="getting-started">
+  <section class="support-card" id="getting-started">
     <h2>Install TeachAtlas</h2>
     <div class="store-links">
       <a href="https://chromewebstore.google.com/detail/hfdninhgfekgelahihnpicfgckiepjgm">Chrome Web Store ↗</a>
@@ -170,18 +238,18 @@
     <p class="note">On Edge, search for “TeachAtlas” in the store. After installing, open TeachAtlas from your browser’s Extensions menu. Supported sites may ask you to grant access.</p>
   </section>
 
-  <section id="recording">
+  <section class="support-card" id="recording">
     <h2>Record and export</h2>
     <ol class="steps">
-      <li>Open a website and select <strong>Start Recording</strong> in TeachAtlas. Grant website access if prompted.</li>
-      <li>Complete your task. Use <strong>Pause Recording</strong> when needed; screenshots are optional.</li>
-      <li>Choose <strong>Stop &amp; Save Recording</strong>, then <strong>Open My Guides</strong> to review and edit.</li>
-      <li>Check the text and screenshots for private information, then export in an available format.</li>
+      <li><span class="step-copy">Open a website and select <strong>Start Recording</strong> in TeachAtlas. Grant website access if prompted.</span></li>
+      <li><span class="step-copy">Complete your task. Use <strong>Pause Recording</strong> when needed; screenshots are optional.</span></li>
+      <li><span class="step-copy">Choose <strong>Stop &amp; Save Recording</strong>, then <strong>Open My Guides</strong> to review and edit.</span></li>
+      <li><span class="step-copy">Check the text and screenshots for private information, then export in an available format.</span></li>
     </ol>
     <p class="note">Screenshots are not automatically redacted. Use the privacy-cover tools or remove sensitive images before exporting or publishing. Protected webpages and fast navigation can prevent some captures.</p>
   </section>
 
-  <section id="plans">
+  <section class="support-card" id="plans">
     <h2>Free and Pro at a glance</h2>
     <div class="two-plans">
       <div class="plan">
@@ -196,7 +264,7 @@
     </div>
   </section>
 
-  <section id="pro">
+  <section class="support-card" id="pro">
     <h2>Pro activation and billing</h2>
     <p class="compact-line">After subscribing, follow the checkout link to the <a href="activate.html">activation page</a> to obtain your code. In the extension, open <strong>Settings and Pro Activation</strong>, enter the code and activate Pro. Keep your code private.</p>
     <div class="inline-actions">
@@ -206,13 +274,13 @@
     <p class="note">Uninstalling TeachAtlas does not cancel a Stripe subscription. For activation-code recovery, contact support using the email associated with your purchase. Do not email your activation code or payment details.</p>
   </section>
 
-  <section id="share">
+  <section class="support-card" id="share">
     <h2>Cloud Share links</h2>
     <p class="compact-line">Open a saved recording or manual and choose its <strong>Share</strong> option. Review the content, choose the offered download formats and publish a public link. You can copy, update or revoke that link.</p>
     <p class="note">Anyone with the link can view the published content without TeachAtlas. Download restrictions do not stop copying, and revocation cannot retrieve copies already saved by others.</p>
   </section>
 
-  <section id="questions">
+  <section class="support-card" id="questions">
     <h2>Quick fixes</h2>
     <div class="q-list">
       <details>
@@ -234,7 +302,7 @@
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section class="support-card contact" id="contact">
     <h2>Still need help?</h2>
     <p>Email us about installation, billing, activation, or a privacy issue. Describe the problem and include your browser and TeachAtlas version when useful.</p>
     <a class="primary-link" href="mailto:bkq421@gmail.com?subject=TeachAtlas%20Support">Email TeachAtlas Support ↗</a>
