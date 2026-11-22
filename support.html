@@ -1,345 +1,191 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin">
-  <title>TeachAtlas Support Center</title>
+  <meta name="theme-color" content="#0d59be">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="Official TeachAtlas support for browser recording, guide exports, activation, subscriptions, troubleshooting and privacy questions.">
+  <meta name="description" content="Official TeachAtlas 2.5.18 help: install on Chrome, Firefox or Edge, record browser tasks, export instructions, activate Pro, use Cloud Share and manage billing.">
   <link rel="canonical" href="https://chx91.github.io/teachatlas-legal/support.html">
   <link rel="icon" href="teachatlas-store-icon.png" type="image/png">
+  <title>TeachAtlas Support Center | Version 2.5.18</title>
   <style>
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f7fc;
-      color: #243447;
-      line-height: 1.7;
+    :root{--blue:#0d59be;--deep:#063a88;--gold:#ffc72d;--ink:#142f58;--muted:#4c6685;--line:#d8e4f2;--pale:#f4f8ff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font:16px/1.62 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}
+    a{color:var(--blue);text-underline-offset:3px}
+    a:focus-visible,summary:focus-visible{outline:3px solid #e0a800;outline-offset:4px}
+    .wrap{width:min(880px,calc(100% - 38px));margin-inline:auto}
+    .skip{position:absolute;top:-90px;left:10px;padding:9px 13px;background:var(--gold);color:var(--ink);font-weight:800;z-index:10}
+    .skip:focus{top:10px}
+    .brand-banner{background:linear-gradient(120deg,#0750b7 0%,#0a66df 75%,#3297ff 100%);color:#fff;text-align:center;padding:19px 14px 16px;overflow:hidden;position:relative;isolation:isolate}
+    .brand-banner::before{content:"";position:absolute;width:340px;height:340px;right:-90px;bottom:-260px;border-radius:50%;background:#8bd0ff27;box-shadow:0 0 0 46px #7accff16,0 0 0 95px #7accff0b;z-index:-1}
+    .wordmark{display:inline-block;font-size:clamp(32px,4vw,43px);font-weight:850;letter-spacing:-.05em;line-height:1.1;text-decoration:none;color:white}
+    .wordmark span{color:var(--gold)}
+    .swoosh{height:6px;width:145px;max-width:75%;border-top:3px solid var(--gold);border-radius:65%;transform:rotate(-3deg);margin:4px auto 0}
+    .brand-banner p{margin:1px 0 0;color:#f2f7ff;font-size:12px;font-weight:650;letter-spacing:.04em}
+    .site-nav{border-bottom:1px solid var(--line);background:#f9fcff}
+    .nav-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:55px}
+    .site-nav a{font-size:13px;font-weight:750;text-decoration:none}
+    .home{display:inline-flex;align-items:center;gap:9px;color:var(--ink)}
+    .home img{width:30px;height:30px;object-fit:contain}
+    .nav-links{display:flex;gap:22px}
+    .hero{padding:47px 0 33px}
+    .eyebrow{font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.15em;color:var(--blue);margin:0 0 9px}
+    h1{font-size:clamp(37px,5.5vw,57px);line-height:1.08;letter-spacing:-.065em;margin:0 0 13px}
+    .hero p.intro{font-size:16px;color:var(--muted);max-width:600px;margin:0}
+    .version{display:inline-block;font-size:11px;font-weight:800;color:var(--deep);background:#e7f1ff;border-radius:4px;padding:4px 9px;margin-top:14px}
+    section{padding:26px 0;border-top:1px solid var(--line)}
+    h2{font-size:clamp(23px,3vw,30px);line-height:1.2;letter-spacing:-.045em;margin:0 0 11px}
+    h3{font-size:17px;letter-spacing:-.025em;margin:0 0 5px}
+    p{margin:0 0 12px}
+    .note{font-size:13px;color:var(--muted);line-height:1.65}
+    .store-links{display:flex;flex-wrap:wrap;gap:8px;margin:17px 0 13px}
+    .store-links a{border:1px solid #bfd2eb;background:var(--pale);color:var(--deep);font-weight:780;text-decoration:none;padding:10px 13px;border-radius:6px;font-size:13px}
+    .store-links a:hover{background:#e5f0ff}
+    .steps{counter-reset:instruction;list-style:none;padding:0;margin:13px 0 9px;display:grid;gap:10px}
+    .steps li{counter-increment:instruction;display:grid;grid-template-columns:21px 1fr;gap:10px;font-size:14px;color:#304c6f}
+    .steps li::before{content:counter(instruction) ".";color:var(--blue);font-weight:900}
+    .two-plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+    .plan{background:var(--pale);border:1px solid var(--line);border-radius:7px;padding:18px 19px}
+    .plan.pro{background:#eef5ff;border-color:#bdd3ee}
+    .plan h3{margin-bottom:7px}
+    .plan p{font-size:13px;color:#3f5a79;line-height:1.6;margin:0}
+    .plan p+p{margin-top:7px}
+    .inline-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;margin:16px 0 12px}
+    .primary-link{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 15px;background:var(--blue);border-radius:5px;color:#fff;text-decoration:none;font-size:13px;font-weight:800}
+    .primary-link:hover{background:var(--deep)}
+    .text-link{font-size:13px;font-weight:780}
+    .compact-line{font-size:14px;color:#385578;line-height:1.7}
+    .q-list{border-top:1px solid var(--line);margin-top:13px}
+    details{border-bottom:1px solid var(--line);padding:12px 0}
+    summary{cursor:pointer;list-style:none;font-weight:740;font-size:14px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+";font-size:22px;color:var(--blue);font-weight:400;line-height:1}
+    details[open] summary::after{content:"−"}
+    details p{margin:9px 10px 1px 0;font-size:13px;line-height:1.75;color:var(--muted)}
+    .contact{padding:22px 0 34px}
+    .contact p{color:var(--muted);font-size:14px}
+    footer{background:#07336f;color:#dceaff;text-align:center;padding:20px 15px;font-size:12px}
+    footer a{color:#fff}
+    @media(max-width:580px){
+      .wrap{width:calc(100% - 34px)}
+      .nav-links{gap:12px}
+      .site-nav a{font-size:12px}
+      .home img{width:27px;height:27px}
+      .hero{padding:33px 0 27px}
+      section{padding:21px 0}
+      .two-plans{grid-template-columns:1fr}
+      .plan{padding:15px}
+      .store-links a{flex:1 1 auto;text-align:center}
     }
-
-    header {
-      background: #185daf;
-      color: white;
-      text-align: center;
-      padding: 45px 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 38px;
-    }
-
-    header p {
-      margin: 10px 0 0;
-    }
-
-    main {
-      max-width: 850px;
-      margin: 35px auto;
-      padding: 0 18px;
-    }
-
-    section {
-      background: white;
-      border: 1px solid #dce5f3;
-      border-radius: 12px;
-      padding: 25px;
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      color: #185daf;
-      margin-top: 0;
-    }
-
-    h3 { color: #193e70; }
-
-    a { color: #135aaa; }
-
-    a:focus-visible {
-      outline: 3px solid #e1ac00;
-      outline-offset: 3px;
-    }
-
-    .button {
-      display: inline-block;
-      background: #185daf;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 12px 19px;
-      border-radius: 7px;
-      margin-top: 8px;
-    }
-
-    .button:hover {
-      background: #124986;
-    }
-
-    .notice {
-      background: #eef5ff;
-      border-left: 4px solid #185daf;
-      padding: 12px 15px;
-      border-radius: 4px;
-    }
-
-    li { margin-bottom: 9px; }
-
-    footer {
-      text-align: center;
-      color: #607088;
-      padding: 20px;
-      font-size: 14px;
-    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
+<a href="#main" class="skip">Skip to support</a>
+<div class="brand-banner">
+  <a href="home.html" class="wordmark" aria-label="TeachAtlas homepage">Teach<span>Atlas</span></a>
+  <div class="swoosh" aria-hidden="true"></div>
+  <p>Record • Review • Export</p>
+</div>
+<nav class="site-nav" aria-label="Site navigation">
+  <div class="wrap nav-row">
+    <a href="home.html" class="home"><img src="teachatlas-store-icon.png" alt="">TeachAtlas Home</a>
+    <div class="nav-links"><a href="#getting-started">Get started</a><a href="#pro">Pro &amp; billing</a><a href="#contact">Contact</a></div>
+  </div>
+</nav>
+<main id="main" class="wrap">
+  <div class="hero">
+    <p class="eyebrow">Help without the hassle</p>
+    <h1>Support Center</h1>
+    <p class="intro">Quick help for installing, recording, exporting and using TeachAtlas Pro.</p>
+    <span class="version">Updated for 2.5.18</span>
+  </div>
 
-<header>
-  <h1>TeachAtlas</h1>
-  <p>Turn what you do into a guide anyone can follow.</p>
-  <p>Support Center</p>
-  
-<p style="margin-top: 20px;">
-  <a href="home.html"
-     style="color: white; font-weight: bold;">
-    Home
-  </a>
-  &nbsp; | &nbsp;
-  <a href="index.html"
-     style="color: white; font-weight: bold;">
-    Privacy &amp; Terms
-  </a>
-</p>
-
-</header>
-
-<main>
-
-  <section>
-    <h2>Welcome to TeachAtlas Support</h2>
-    <p>
-      Find help with installing TeachAtlas Free or Pro,
-      activating your subscription, recording guides,
-      sharing Pro guides online, managing billing, and recovering access.
-    </p>
+  <section id="getting-started">
+    <h2>Install TeachAtlas</h2>
+    <div class="store-links">
+      <a href="https://chromewebstore.google.com/detail/hfdninhgfekgelahihnpicfgckiepjgm">Chrome Web Store ↗</a>
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/teachatlas/">Firefox Add-ons ↗</a>
+      <a href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home">Edge Add-ons ↗</a>
+    </div>
+    <p class="note">On Edge, search for “TeachAtlas” in the store. After installing, open TeachAtlas from your browser’s Extensions menu. Supported sites may ask you to grant access.</p>
   </section>
 
-  <section>
-    <h2>1. Install TeachAtlas</h2>
-    <p>Choose the official extension store for your desktop browser:</p>
-    <ul>
-      <li><strong>Chrome:</strong> <a href="https://chromewebstore.google.com/detail/hfdninhgfekgelahihnpicfgckiepjgm">Install from Chrome Web Store</a>.</li>
-      <li><strong>Firefox:</strong> <a href="https://addons.mozilla.org/en-US/firefox/addon/teachatlas/">Install from Firefox Add-ons</a>.</li>
-      <li><strong>Microsoft Edge:</strong> <a href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home" target="_blank" rel="noopener noreferrer">Open Edge Add-ons</a> and search for <strong>TeachAtlas</strong>. The direct Edge listing link will be added once verified.</li>
-    </ul>
-    <p>Review the requested permissions, then pin TeachAtlas in your browser's Extensions menu if desired. Features and permission prompts can vary by browser and installed version.</p>
-  </section>
-
-  <section>
-    <h2>2. Activate TeachAtlas Pro</h2>
-    <ol>
-      <li>
-        Purchase a TeachAtlas Pro subscription
-        through the official Stripe checkout.
-      </li>
-      <li>
-        After checkout, follow the redirect
-        to the TeachAtlas activation page.
-      </li>
-      <li>Click Activate TeachAtlas Pro.</li>
-      <li>
-        Copy the activation code and store it securely.
-      </li>
-      <li>Open the TeachAtlas extension in your browser.</li>
-      <li>
-        Paste the code into the Activation Code field
-        and click Activate Pro.
-      </li>
+  <section id="recording">
+    <h2>Record and export</h2>
+    <ol class="steps">
+      <li>Open a website and select <strong>Start Recording</strong> in TeachAtlas. Grant website access if prompted.</li>
+      <li>Complete your task. Use <strong>Pause Recording</strong> when needed; screenshots are optional.</li>
+      <li>Choose <strong>Stop &amp; Save Recording</strong>, then <strong>Open My Guides</strong> to review and edit.</li>
+      <li>Check the text and screenshots for private information, then export in an available format.</li>
     </ol>
-
-    <p class="notice">
-      TeachAtlas Pro requires an active subscription.
-      Activation codes should be treated like passwords
-      and should not be shared.
-    </p>
-
-    <a class="button" href="activate.html">
-      Activation Page
-    </a>
+    <p class="note">Screenshots are not automatically redacted. Use the privacy-cover tools or remove sensitive images before exporting or publishing. Protected webpages and fast navigation can prevent some captures.</p>
   </section>
 
-  <section>
-    <h2>3. Record Your First Guide</h2>
-    <ol>
-      <li>Open a supported webpage in your supported browser.</li>
-      <li>Open the TeachAtlas extension.</li>
-      <li>
-        If your version supports screenshots, select Include screenshots when you want pictures in your guide and acknowledge the privacy notice if prompted.
-      </li>
-      <li>Click Start Recording.</li>
-      <li>
-        Perform the actions you want to document.
-      </li>
-      <li>Click Stop & Save Recording.</li>
-      <li>
-        Review your steps and screenshots. Use Hide private details to cover anything you do not want to share.
-      </li>
-      <li>
-        Export your guide using an available format, confirming your privacy review if prompted.
-      </li>
-    </ol>
-
-    <p>
-      Screenshots may include visible personal or confidential information, including text in fields and private communications. TeachAtlas does not automatically redact screenshots. Choose what to record, review every instruction and image before exporting or sharing, and use privacy-cover tools or remove screenshots when needed. Do not enable private-window access. Browser restrictions can prevent recording or screenshots on some pages.
-    </p>
+  <section id="plans">
+    <h2>Free and Pro at a glance</h2>
+    <div class="two-plans">
+      <div class="plan">
+        <h3>Free — $0</h3>
+        <p>One saved recording at a time, up to <strong>40 steps</strong> and <strong>20 screenshots</strong>. Export to <strong>TXT or PDF</strong>.</p>
+        <p>Recording pauses at the Free step limit.</p>
+      </div>
+      <div class="plan pro">
+        <h3>Pro — $9/month</h3>
+        <p>More recordings and screenshots (subject to browser limits), <strong>HTML, Word and Markdown</strong> exports, manual building, backups and <strong>Cloud Share</strong>, where supported.</p>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>4. Lost Your Activation Code?</h2>
-    <p>
-      If you changed computers, reinstalled your browser,
-      or lost your activation code, you may request
-      a replacement without purchasing another
-      subscription.
-    </p>
-
-    <ol>
-      <li>
-        Contact TeachAtlas Support using the
-        email address associated with your purchase.
-      </li>
-      <li>
-        Include the subject:
-        TeachAtlas Activation Recovery.
-      </li>
-      <li>
-        Explain that you need a replacement code.
-      </li>
-      <li>
-        Support will provide instructions for
-        verifying ownership of the subscription.
-      </li>
-      <li>
-        Once ownership and subscription eligibility
-        are confirmed, a replacement code can
-        be issued.
-      </li>
-    </ol>
-
-    <p class="notice">
-      Never email your password, payment card
-      information, or existing activation code.
-      Replacement or reactivation depends on verifying subscription eligibility. Support will explain any effect on older codes.
-    </p>
-
-    <a class="button"
-       href="mailto:bkq421@gmail.com?subject=TeachAtlas%20Activation%20Recovery">
-      Request Activation Recovery
-    </a>
+  <section id="pro">
+    <h2>Pro activation and billing</h2>
+    <p class="compact-line">After subscribing, follow the checkout link to the <a href="activate.html">activation page</a> to obtain your code. In the extension, open <strong>Settings and Pro Activation</strong>, enter the code and activate Pro. Keep your code private.</p>
+    <div class="inline-actions">
+      <a class="primary-link" href="activate.html">Activation page ↗</a>
+      <a class="text-link" href="https://billing.stripe.com/p/login/aFa9AV1mReOg6xP44S2wU00">Manage or cancel billing ↗</a>
+    </div>
+    <p class="note">Uninstalling TeachAtlas does not cancel a Stripe subscription. For activation-code recovery, contact support using the email associated with your purchase. Do not email your activation code or payment details.</p>
   </section>
 
-  <section>
-    <h2>5. Manage Your Subscription</h2>
-    <p>
-      TeachAtlas Free requires no subscription. TeachAtlas Pro is billed at $9 USD per month, excluding any applicable taxes shown at checkout.
-    </p>
-<p>
-  To manage your subscription, update your payment method,
-  view invoices, or cancel your subscription, visit our
-  <a href="https://billing.stripe.com/p/login/aFa9AV1mReOg6xP44S2wU00">
-    TeachAtlas Billing Portal
-  </a>.
-</p>
-    <p>
-      If you cannot find your billing management link,
-      contact TeachAtlas Support.
-    </p>
-    <p>
-      Your Stripe subscription information confirms when cancellation takes effect. Ordinarily, cancellation prevents future renewals and Pro access continues to the end of the already-paid period, unless different terms are shown when canceling. Uninstalling TeachAtlas does not cancel a subscription.
-    </p>
+  <section id="share">
+    <h2>Cloud Share (Pro)</h2>
+    <p class="compact-line">Open a saved recording or manual and choose its <strong>Share</strong> option. Review the content, choose the offered download formats and publish a public link. You can copy, update or revoke that link.</p>
+    <p class="note">Anyone with the link can view the published content without TeachAtlas. Download restrictions do not stop copying, and revocation cannot retrieve copies already saved by others.</p>
   </section>
 
-  <section>
-    <h2>6. Frequently Asked Questions</h2>
-
-    <h3>Are my guides stored online?</h3>
-    <p>
-      By default, TeachAtlas saves guides locally in your browser; it does not automatically back up or sync your guide library. TeachAtlas Pro can optionally publish a guide or multi-chapter manual, including selected screenshots, to a public Cloudflare-hosted link. Anyone with that link can view the publication without installing TeachAtlas. Review and remove sensitive details before publishing.
-    </p>
-
-    <h3>How do I report a privacy concern or request removal of a public publication?</h3>
-    <p>Contact TeachAtlas Support with the affected public link and a brief description of the concern. You can also request removal if you lose access to the revocation controls or wish to withdraw consent for publication of your information. Do not send passwords, activation credentials, or copies of sensitive records. See our <a href="index.html#privacy">Privacy Policy</a> for further information.</p>
-
-    <h3>How do I change the interface language?</h3>
-    <p>In supported versions, select the globe icon in the header to choose your preferred interface language or automatic website-language detection. The language preference is stored locally; switching languages does not translate your recorded instructions or user-created guide titles.</p>
-
-    <h3>How do I publish or revoke a guide or manual link?</h3>
-    <p>With an active Pro subscription, open a guide in the editor or assemble a manual in the Manual Builder and open the sharing dialog. Choose the allowed download formats, review all instructions and screenshots for private information, confirm the privacy notice, and select Publish. You can copy the public link, update the existing publication, or revoke it. A different manual title or chapter selection/order may create a separate publication. Public viewers can copy or redistribute content regardless of the offered download formats. Do not publish credentials, payment details, health information, private communications, or other sensitive content. Obtain any required permission and consent before publishing someone else's information. Revocation disables that hosted link but cannot remove copies recipients already saved. If you lose Pro access, clear local storage, or need a publication removed, contact support.</p>
-
-    <h3>What does the Free Version include?</h3>
-    <p>Current Chrome Free Version allows one saved guide at a time, up to 40 steps and 20 screenshots per guide, and TXT/PDF exports. Recording pauses when the 40-step limit is reached. Pro removes these recording limits, subject to browser and technical constraints, and adds public sharing and premium tools.</p>
-
-    <h3>Can I use TeachAtlas on multiple websites?</h3>
-    <p>
-      TeachAtlas supports recording across
-      compatible websites and browser tabs,
-      subject to site access and browser restrictions.
-    </p>
-
-    <h3>Why didn't a screenshot appear?</h3>
-    <p>
-      Screenshots are optional. Protected pages, site permissions, fast navigation, and browser capture limits may prevent some images from being saved.
-    </p>
-
-    <h3>What if my subscription expires?</h3>
-    <p>
-      TeachAtlas Pro checks subscription eligibility
-      through its license server. Pro functionality
-      requires a qualifying subscription.
-    </p>
+  <section id="questions">
+    <h2>Quick fixes</h2>
+    <div class="q-list">
+      <details>
+        <summary>Recording won’t start?</summary>
+        <p>Try a normal website, not a browser settings or internal page. Check the website access prompt, then reopen TeachAtlas and try again. Some pages cannot be recorded.</p>
+      </details>
+      <details>
+        <summary>A screenshot is missing?</summary>
+        <p>Check that <strong>Include screenshots</strong> was selected. Browser restrictions, navigation speed and site permissions may prevent individual images from being captured.</p>
+      </details>
+      <details>
+        <summary>How do I change the interface language?</summary>
+        <p>Use the language control in TeachAtlas to select a language or automatic website-language detection. This changes the extension interface, not your recorded text.</p>
+      </details>
+      <details>
+        <summary>Need a replacement activation code or a public link removed?</summary>
+        <p><a href="#contact">Contact support</a> with your purchase email or the affected public link and a short explanation. Support may need to verify subscription ownership. Never send a password, payment card number or activation code.</p>
+      </details>
+    </div>
   </section>
 
-  <section>
-    <h2>7. Contact Support</h2>
-    <p>
-      Need additional help with installation,
-      subscription activation, billing,
-      or technical issues?
-    </p>
-
-    <p>
-      Email:
-      <a href="mailto:bkq421@gmail.com">
-        bkq421@gmail.com
-      </a>
-    </p>
+  <section class="contact" id="contact">
+    <h2>Still need help?</h2>
+    <p>Email us about installation, billing, activation, or a privacy issue. Describe the problem and include your browser and TeachAtlas version when useful.</p>
+    <a class="primary-link" href="mailto:bkq421@gmail.com?subject=TeachAtlas%20Support">Email TeachAtlas Support ↗</a>
+    <p class="note" style="margin-top:14px"><a href="index.html#privacy">Privacy Policy</a> · <a href="index.html#terms">Terms of Use</a></p>
   </section>
-
-  <section>
-    <h2>Privacy and Terms</h2>
-    <p>
-      Read our privacy policy and terms of service
-      for information about TeachAtlas and
-      customer responsibilities.
-    </p>
-
-    <a href="index.html">
-      Privacy Policy and Terms of Service
-    </a>
-  </section>
-
 </main>
-
-<footer>
-  &copy; 2026 TeachAtlas.
-  All rights reserved.
-</footer>
-
+<footer>© 2026 TeachAtlas · <a href="home.html">Home</a> · <a href="index.html">Privacy &amp; Terms</a></footer>
 </body>
 </html>
