@@ -60,6 +60,8 @@ footer{background:#0c1d36;color:#cddcef;padding:35px 0}.footer-row{display:flex;
 @media(max-width:790px){.hero-grid,.feature{grid-template-columns:1fr}.hero{padding:56px 0}.preview{max-width:550px;transform:none}.grid{grid-template-columns:1fr}.how-grid{grid-template-columns:1fr}.section{padding:57px 0}}
 @media(max-width:530px){.nav{justify-content:center}.navlinks{justify-content:center;gap:12px}.navlinks a{font-size:12px}h1{letter-spacing:-1.2px}.lead{font-size:17px}.btn{width:100%}.preview{padding:15px}.feature{padding:22px}}
 </style>
+<script>try{if(localStorage.getItem("ta_site_dark_mode")==="dark")document.documentElement.setAttribute("data-ta-theme","dark")}catch(_){}</script>
+<script src="teachatlas-theme.js" defer></script>
 <link rel="stylesheet" href="teachatlas-site-header.css">
 </head>
 <body>
@@ -94,6 +96,9 @@ footer{background:#0c1d36;color:#cddcef;padding:35px 0}.footer-row{display:flex;
         <a href="index.html#privacy">Privacy &amp; Terms</a>
       </nav>
     </details>
+    <button type="button" class="ta-site-theme-toggle" id="ta-theme-toggle" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+      <span class="ta-site-moon" aria-hidden="true">☾</span><span class="ta-site-sun" aria-hidden="true">☀</span>
+    </button>
   </div>
 </div>
 <main id="main">
