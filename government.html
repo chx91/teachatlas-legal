@@ -90,6 +90,20 @@ html[data-ta-theme="dark"] .gov-footer{background:#10223a;border-color:#395775}
 </style>
 <script>try{if(localStorage.getItem("ta_site_dark_mode")==="dark")document.documentElement.setAttribute("data-ta-theme","dark")}catch(_){}</script>
 <link rel="stylesheet" href="teachatlas-site-header.css?v=20261122c">
+<style id="gov-contact-button-fix">
+  /* Keep the inquiry call-to-action blue with readable white text in both themes. */
+  .gov-contact .gov-button,
+  html[data-ta-theme="dark"] .gov-contact .gov-button{
+    background:#0d64c7!important;
+    color:#ffffff!important;
+    border:1px solid #68a9ff!important;
+  }
+  .gov-contact .gov-button:hover,
+  html[data-ta-theme="dark"] .gov-contact .gov-button:hover{
+    background:#084e9c!important;
+    color:#ffffff!important;
+  }
+</style>
 </head>
 <body>
 <a class="ta-site-skip" href="#main">Skip to content</a>
