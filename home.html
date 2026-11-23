@@ -551,6 +551,49 @@
 </style>
 <script>try{if(localStorage.getItem("ta_site_dark_mode")==="dark")document.documentElement.setAttribute("data-ta-theme","dark")}catch(_){}</script>
 <link rel="stylesheet" href="teachatlas-site-header.css?v=20261122c">
+<style id="ta-home-separated-groups">
+  /* Remove the old full-width strips behind the individual cards. */
+  main#main .new-process,
+  main#main .new-plans,
+  html[data-ta-theme="dark"] main#main .new-process,
+  html[data-ta-theme="dark"] main#main .new-plans{
+    background:none!important;
+    background-color:transparent!important;
+    border:0!important;
+    border-radius:0!important;
+    box-shadow:none!important;
+    padding:0!important;
+    outline:0!important;
+    overflow:visible!important;
+  }
+  main#main .new-process{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:18px;
+  }
+  main#main .new-plans{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:18px;
+  }
+  main#main .new-process>div,
+  main#main .new-process>div+div,
+  main#main .new-plans>.new-plan{
+    border-radius:16px!important;
+    box-shadow:0 5px 15px rgba(10,48,99,.055)!important;
+  }
+  html[data-ta-theme="dark"] main#main .new-process>div,
+  html[data-ta-theme="dark"] main#main .new-process>div+div,
+  html[data-ta-theme="dark"] main#main .new-plans>.new-plan{
+    box-shadow:0 5px 16px rgba(0,0,0,.12)!important;
+  }
+  @media(max-width:780px){
+    main#main .new-process,main#main .new-plans{
+      grid-template-columns:1fr;
+      gap:13px;
+    }
+  }
+</style>
 
 <style id="ta-home-rounded-cards">
   /* Match the Support Center's rounded-card system throughout the homepage. */
