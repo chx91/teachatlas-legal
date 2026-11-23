@@ -551,6 +551,116 @@
 </style>
 <script>try{if(localStorage.getItem("ta_site_dark_mode")==="dark")document.documentElement.setAttribute("data-ta-theme","dark")}catch(_){}</script>
 <link rel="stylesheet" href="teachatlas-site-header.css?v=20261122c">
+
+<style id="ta-home-rounded-cards">
+  /* Match the Support Center's rounded-card system throughout the homepage. */
+  main#main {
+    display:flex;flex-direction:column;gap:17px;
+    padding:23px 0 42px;
+  }
+  main#main > section{
+    flex:none;width:min(1260px,calc(100% - 38px));margin-inline:auto;
+    border:1px solid #d7e4f2;border-radius:21px;
+    box-shadow:0 6px 21px rgba(9,48,98,.045);
+    overflow:hidden;
+  }
+  main#main > .new-hero{
+    background:linear-gradient(115deg,#fff,#f1f8ff 75%,#dfedff);
+  }
+  main#main .new-hero-grid{padding-block:56px 57px}
+  main#main > .new-how,main#main > .new-resources,main#main > .new-faq{
+    background:#f7faff;
+  }
+  main#main > .new-pricing{background:#edf5ff}
+  main#main > .new-share{
+    background:linear-gradient(125deg,#063a88,#0b59ba);
+    border-color:#2c64a3;
+  }
+  /* Every "How it works" step is an individual card, not a continuous band. */
+  main#main .new-process{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:13px;margin-top:25px;border:0;
+  }
+  main#main .new-process>div,
+  main#main .new-process>div+div{
+    border:1px solid #d8e4f2;border-radius:14px;
+    background:#fff;padding:20px 21px;
+    min-width:0;
+  }
+  /* Free and Pro use two distinct rounded panels. */
+  main#main .new-plans{
+    display:grid;gap:14px;
+    border:0;border-radius:0;overflow:visible;
+    background:transparent;
+  }
+  main#main .new-plan,main#main .new-plan.pro{
+    border:1px solid #c8ddf2;border-radius:15px;
+    background:#fff;
+    box-shadow:0 4px 15px rgba(12,61,112,.04);
+  }
+  main#main .new-plan.pro{background:#f9fcff}
+  /* Make useful links and FAQs look as polished as the plan cards. */
+  main#main .new-real-links{gap:11px}
+  main#main .new-real-links a{
+    display:block;padding:12px 16px;
+    border:1px solid #d8e4f2;border-radius:12px;
+    background:#fff;text-decoration:underline;
+  }
+  main#main .new-real-links a:hover{
+    background:#edf5ff;border-color:#b6d3f1;
+  }
+  main#main .new-faq-grid>div:last-child{border-top:0}
+  main#main .new-faq details{
+    margin:0 0 11px;padding:15px 18px;
+    border:1px solid #d8e4f2;border-radius:13px;background:#fff;
+  }
+  main#main .new-faq summary{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+  }
+  main#main .new-faq summary::after{float:none;flex:0 0 auto}
+  html[data-ta-theme="dark"] main#main > section{
+    border-color:#355272!important;
+    box-shadow:0 7px 20px rgba(0,0,0,.1)!important;
+  }
+  html[data-ta-theme="dark"] main#main .new-process>div,
+  html[data-ta-theme="dark"] main#main .new-process>div+div,
+  html[data-ta-theme="dark"] main#main .new-real-links a,
+  html[data-ta-theme="dark"] main#main .new-faq details{
+    background:#192e49!important;border-color:#395777!important;
+    color:#edf5ff!important;
+  }
+  html[data-ta-theme="dark"] main#main .new-plans{background:transparent!important}
+  html[data-ta-theme="dark"] main#main .new-plan{
+    background:#192e49!important;border-color:#395777!important;
+  }
+  html[data-ta-theme="dark"] main#main .new-plan.pro{
+    background:#1b3451!important;border-color:#456484!important;
+  }
+  html[data-ta-theme="dark"] main#main .new-real-links a:hover{
+    background:#274667!important;
+  }
+  @media(max-width:780px){
+    main#main{gap:13px;padding:15px 0 30px}
+    main#main > section{width:calc(100% - 24px);border-radius:17px}
+    main#main > section .wrap{width:calc(100% - 36px)}
+    main#main .new-hero-grid{padding-block:37px 40px}
+    main#main .new-process{grid-template-columns:1fr;gap:11px}
+    main#main .new-process>div,main#main .new-process>div+div{
+      padding:17px 19px;border:1px solid #d8e4f2;
+    }
+    main#main .new-plans{grid-template-columns:1fr;gap:12px}
+    main#main .new-plan,main#main .new-plan.pro{
+      border:1px solid #c8ddf2;border-radius:14px;
+    }
+    main#main .new-faq details{padding:14px 16px}
+  }
+  @media(max-width:520px){
+    main#main .new-hero-grid{padding-top:34px}
+    main#main .new-process>div,main#main .new-process>div+div{padding:15px 16px}
+    main#main .new-plan{padding:23px 22px}
+    main#main .new-plan.pro{border-top:1px solid #c8ddf2}
+  }
+</style>
 </head>
 <body>
 <a class="ta-site-skip" href="#main">Skip to content</a>
